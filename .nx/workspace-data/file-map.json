@@ -10,6 +10,9 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3",
@@ -67,11 +70,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "11614070006940253134"
+          "hash": "5641762778335204654"
         },
         {
           "file": "package.json",
-          "hash": "15129212087568111784",
+          "hash": "8920315053964198572",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular-devkit/core",
@@ -98,6 +101,9 @@
             "npm:@angular/platform-browser",
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
+            "npm:primeflex",
+            "npm:primeicons",
+            "npm:primeng",
             "npm:rxjs",
             "npm:tslib",
             "npm:zone.js"
@@ -125,7 +131,7 @@
         },
         {
           "file": "src/app/Home/home.page.html",
-          "hash": "8980251380215388944"
+          "hash": "15351323635642292506"
         },
         {
           "file": "src/app/Home/home.page.scss",
@@ -133,7 +139,7 @@
         },
         {
           "file": "src/app/Home/home.page.ts",
-          "hash": "8569655409659073296",
+          "hash": "5474210876340308899",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -156,19 +162,28 @@
           ]
         },
         {
+          "file": "src/app/NotPageFound/NotPageFound.page.html",
+          "hash": "10583919498137990584"
+        },
+        {
+          "file": "src/app/NotPageFound/NotPageFound.page.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/NotPageFound/NotPageFound.page.ts",
+          "hash": "2664777644121753235",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
           "file": "src/app/app.component.html",
           "hash": "848395303240231261"
         },
         {
           "file": "src/app/app.component.scss",
           "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/app.component.spec.ts",
-          "hash": "4018054178253388811",
-          "deps": [
-            "npm:@angular/core"
-          ]
         },
         {
           "file": "src/app/app.component.ts",
@@ -188,7 +203,7 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "14708531366118120934",
+          "hash": "11460989200445195307",
           "deps": [
             "npm:@angular/router"
           ]
@@ -210,16 +225,16 @@
           ]
         },
         {
-          "file": "src/app/menu/menu.page.html",
+          "file": "src/app/menu/menu.component.html",
           "hash": "16950752715900324183"
         },
         {
-          "file": "src/app/menu/menu.page.scss",
+          "file": "src/app/menu/menu.component.scss",
           "hash": "4055606894390288348"
         },
         {
-          "file": "src/app/menu/menu.page.ts",
-          "hash": "2231694451229205138",
+          "file": "src/app/menu/menu.component.ts",
+          "hash": "12963547665500720708",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -227,7 +242,7 @@
         },
         {
           "file": "src/app/projects/projects.page.html",
-          "hash": "10539649865700167359"
+          "hash": "17979489417485048998"
         },
         {
           "file": "src/app/projects/projects.page.scss",
@@ -235,7 +250,7 @@
         },
         {
           "file": "src/app/projects/projects.page.ts",
-          "hash": "17222171699585397294",
+          "hash": "3687610437995777763",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -262,7 +277,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "5195668842064076916"
+          "hash": "11177646184760301138"
         },
         {
           "file": "tsconfig.app.json",
@@ -275,22 +290,6 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "15575553540147145788"
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.ts",
-          "hash": "2664777644121753235",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.html",
-          "hash": "10583919498137990584"
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.scss",
-          "hash": "4055606894390288348"
         }
       ]
     }

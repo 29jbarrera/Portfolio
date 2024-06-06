@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomePage } from './Home/home.page';
 import { ProjectsPage } from './projects/projects.page';
+import { NotPageFoundPage } from './NotPageFound/NotPageFound.page';
 
-export const routes: Routes = [] = [
+export const routes: Routes = [
     {
       path: '',
       pathMatch: 'full',
@@ -20,7 +21,7 @@ export const routes: Routes = [] = [
       },
     {
       path: '**',
-      component: NotFoundPage,
+      component: NotPageFoundPage,
     },
   ];
   
