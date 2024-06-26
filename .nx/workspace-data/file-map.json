@@ -146,18 +146,19 @@
         },
         {
           "file": "src/app/pages/Home/content/content.component.html",
-          "hash": "12127765830149944604"
+          "hash": "15830132495103241315"
         },
         {
           "file": "src/app/pages/Home/content/content.component.scss",
-          "hash": "4055606894390288348"
+          "hash": "661945637188314254"
         },
         {
           "file": "src/app/pages/Home/content/content.component.ts",
-          "hash": "15741814378442923074",
+          "hash": "603972601329074601",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:primeng"
           ]
         },
         {
@@ -266,7 +267,7 @@
         },
         {
           "file": "src/index.html",
-          "hash": "7522408752153790086"
+          "hash": "7269947204059406559"
         },
         {
           "file": "src/main.ts",
@@ -274,10 +275,6 @@
           "deps": [
             "npm:@angular/platform-browser"
           ]
-        },
-        {
-          "file": "src/styles.scss",
-          "hash": "11075829657641162272"
         },
         {
           "file": "tsconfig.app.json",
@@ -290,6 +287,14 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "15575553540147145788"
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "13064733190068355834"
+        },
+        {
+          "file": "src/assets/img/download.png",
+          "hash": "17174984827171509145"
         }
       ]
     }

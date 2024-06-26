@@ -1,1 +1,12 @@
+.custom-hover{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+}
 
+.custom-hover:hover{
+    width: 90px;
+    height: 90px;
+
+}
