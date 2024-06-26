@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../footer/footer.component';
-import { MenuComponent } from '../menu/menu.component';
+import { FooterComponent } from '../components/footer/footer.component';
+
 
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, FooterComponent, MenuComponent],
+  imports: [CommonModule, FooterComponent],
   templateUrl: './projects.page.html',
   styleUrl: './projects.page.scss'
 })

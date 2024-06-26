@@ -114,70 +114,6 @@
           "hash": "17904041386207887373"
         },
         {
-          "file": "src/app/Home/content/content.component.html",
-          "hash": "3420108891540278226"
-        },
-        {
-          "file": "src/app/Home/content/content.component.scss",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "src/app/Home/content/content.component.ts",
-          "hash": "15741814378442923074",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "src/app/Home/home.page.html",
-          "hash": "15351323635642292506"
-        },
-        {
-          "file": "src/app/Home/home.page.scss",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "src/app/Home/home.page.ts",
-          "hash": "5474210876340308899",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "src/app/Home/skills/skills.component.html",
-          "hash": "8295580610553341969"
-        },
-        {
-          "file": "src/app/Home/skills/skills.component.scss",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "src/app/Home/skills/skills.component.ts",
-          "hash": "15516192318461174467",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.html",
-          "hash": "10583919498137990584"
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.scss",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "src/app/NotPageFound/NotPageFound.page.ts",
-          "hash": "2664777644121753235",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
           "file": "src/app/app.component.html",
           "hash": "848395303240231261"
         },
@@ -203,21 +139,85 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "11460989200445195307",
+          "hash": "11157212249124248751",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
-          "file": "src/app/footer/footer.component.html",
-          "hash": "4870840326542635113"
+          "file": "src/app/pages/Home/content/content.component.html",
+          "hash": "12127765830149944604"
         },
         {
-          "file": "src/app/footer/footer.component.scss",
+          "file": "src/app/pages/Home/content/content.component.scss",
           "hash": "4055606894390288348"
         },
         {
-          "file": "src/app/footer/footer.component.ts",
+          "file": "src/app/pages/Home/content/content.component.ts",
+          "hash": "15741814378442923074",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/Home/home.page.html",
+          "hash": "16611900262280750614"
+        },
+        {
+          "file": "src/app/pages/Home/home.page.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/pages/Home/home.page.ts",
+          "hash": "9901959892402388706",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/Home/skills/skills.component.html",
+          "hash": "8295580610553341969"
+        },
+        {
+          "file": "src/app/pages/Home/skills/skills.component.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/pages/Home/skills/skills.component.ts",
+          "hash": "15516192318461174467",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/NotPageFound/NotPageFound.page.html",
+          "hash": "10583919498137990584"
+        },
+        {
+          "file": "src/app/pages/NotPageFound/NotPageFound.page.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/pages/NotPageFound/NotPageFound.page.ts",
+          "hash": "2664777644121753235",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/pages/components/footer/footer.component.html",
+          "hash": "4870840326542635113"
+        },
+        {
+          "file": "src/app/pages/components/footer/footer.component.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/pages/components/footer/footer.component.ts",
           "hash": "6283335237404892245",
           "deps": [
             "npm:@angular/core",
@@ -225,15 +225,15 @@
           ]
         },
         {
-          "file": "src/app/menu/menu.component.html",
+          "file": "src/app/pages/components/menu/menu.component.html",
           "hash": "16950752715900324183"
         },
         {
-          "file": "src/app/menu/menu.component.scss",
+          "file": "src/app/pages/components/menu/menu.component.scss",
           "hash": "4055606894390288348"
         },
         {
-          "file": "src/app/menu/menu.component.ts",
+          "file": "src/app/pages/components/menu/menu.component.ts",
           "hash": "12963547665500720708",
           "deps": [
             "npm:@angular/core",
@@ -241,16 +241,16 @@
           ]
         },
         {
-          "file": "src/app/projects/projects.page.html",
-          "hash": "17979489417485048998"
+          "file": "src/app/pages/projects/projects.page.html",
+          "hash": "12960613306735420754"
         },
         {
-          "file": "src/app/projects/projects.page.scss",
+          "file": "src/app/pages/projects/projects.page.scss",
           "hash": "4055606894390288348"
         },
         {
-          "file": "src/app/projects/projects.page.ts",
-          "hash": "3687610437995777763",
+          "file": "src/app/pages/projects/projects.page.ts",
+          "hash": "9260359006175483812",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -277,7 +277,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "11177646184760301138"
+          "hash": "11075829657641162272"
         },
         {
           "file": "tsconfig.app.json",
