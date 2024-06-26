@@ -146,7 +146,7 @@
         },
         {
           "file": "src/app/pages/Home/content/content.component.html",
-          "hash": "15830132495103241315"
+          "hash": "7613098245510679029"
         },
         {
           "file": "src/app/pages/Home/content/content.component.scss",
@@ -154,7 +154,7 @@
         },
         {
           "file": "src/app/pages/Home/content/content.component.ts",
-          "hash": "603972601329074601",
+          "hash": "7153326402684161324",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -290,7 +290,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "13064733190068355834"
+          "hash": "1533735369400170109"
         },
         {
           "file": "src/assets/img/download.png",

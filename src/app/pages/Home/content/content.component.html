@@ -17,15 +17,47 @@
       </div>
     </div>
     <div class="flex w-6 justify-content-center align-items-center">
-        <div class="w-3 flex">
-            <div class="flex surface-400" style="width: 105px; height: 105px; border-radius: 50%;">
-                <div class="m-auto text-center surface-500 cursor-pointer custom-hover"> 
-                    <img alt="download" src="/assets/img/download.png" class="w-5 m-auto mt-4 " />
-                </div>
-            </div>
+      <div class="w-3 flex">
+        <div
+          class="flex surface-400"
+          style="width: 105px; height: 105px; border-radius: 50%"
+        >
+          <div
+            class="m-auto text-center surface-500 cursor-pointer custom-hover"
+          >
+          <!-- TODO: AL HACER CLICK DESCARGAR CV EN PDF -->
+            <img
+              alt="download"
+              src="/assets/img/download.png"
+              class="w-5 m-auto mt-4"
+            />
+          </div>
         </div>
-        <div class="w-9 surface-100 border-radius">img personal</div>
       </div>
+      <!-- TODO: AÑADIR IMAGEN PERSSONAL -->
+      <div class="w-9 surface-100 border-radius">img personal</div>
+    </div>
   </div>
 </section>
-surface-500
+
+<!-- ABOUT ME -->
+<section class="container-router-outlet">
+  <div class="flex-rows w-full">
+    <div class="text-primary-700 font-bold text-5xl w-6 ml-auto py-2">
+      About me
+    </div>
+    <div class="flex py-2 gap-6">
+      <!-- TODO: AÑADIR IMAGEN ORDENADOR CHULA -->
+      <div class="flex w-6 justify-content-center align-items-center">img</div>
+      <div class="flex-rows w-6 justify-content-center align-items-center">
+        <p class="text-primary-600 w-8">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          beatae voluptatem aperiam veritatis debitis quia explicabo magni,
+          ducimus id perspiciatis quidem dignissimos odit assumenda placeat
+          voluptatibus, pariatur numquam, saepe quaerat?
+        </p>
+        <p-button class="ml-2" label="Contact me"[rounded]="true" [raised]="true" />
+      </div>
+    </div>
+  </div>
+</section>
