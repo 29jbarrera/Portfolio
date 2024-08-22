@@ -1,1 +1,30 @@
-<p>skills works!</p>
+<section class="container-router-outlet">
+  <div class="flex flex-column w-8 m-auto">
+    <div class="text-primary-700 font-bold text-5xl ml-3 mb-4">My Skills</div>
+    <div class="flex justify-content-center gap-6">
+      <!-- Primera columna -->
+      <div class="flex flex-column align-items-center gap-2 w-6">
+        <div class="card w-full" *ngFor="let value of skillsValues">
+          <div class="flex align-items-center gap-3 w-full">
+            <p>Logos</p>
+            <div class="w-full">
+              <p-progressBar [value]="value" class="w-full"></p-progressBar>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda columna -->
+      <div class="flex flex-column align-items-center gap-2 w-6">
+        <div class="card w-full" *ngFor="let value of skillsValues2">
+          <div class="flex align-items-center gap-3 w-full">
+            <p>Logos</p>
+            <div class="w-full">
+              <p-progressBar [value]="value" class="w-full"></p-progressBar>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
