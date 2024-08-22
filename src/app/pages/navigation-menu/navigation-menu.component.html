@@ -1,0 +1,60 @@
+<div class="min-h-screen flex relative xl:static surface-ground">
+  <!-- Menú lateral -->
+  <div
+    id="app-sidebar"
+    class="h-full flex-shrink-0 fixed left-0 top-0 z-3 select-none fadeinleft animation-duration-150"
+    style="width: 300px"
+  >
+    <div class="flex flex-column h-full bg-navigator">
+      <div
+        class="flex align-items-center justify-content-center px-5 flex-shrink-0"
+      >
+        <!-- Botón cerrar menú -->
+        <div class="menu-button-close" (click)="handleMenu()">
+          <!-- TODO : AÑADIR LOGO PARA CERRAR EL MENU -->
+          <i class="pi pi-chevron-left"></i>
+        </div>
+        <!-- Logo APP -->
+        <h1>Javier Barrera</h1>
+      </div>
+      <!-- Separador Logo -->
+      <hr class="menu-separator" />
+      <!-- Componente Menú -->
+
+      <ul class="list-none p-2 m-0 overflow-y-auto">
+        <li *ngFor="let item of menu_items">
+          <app-menu [item]="item" (go_to)="go_to($event)"></app-menu>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Menu horizontal -->
+  <div class="min-h-screen flex flex-column relative flex-auto">
+    <div
+      class="flex justify-content-between align-items-center px-5 surface-0 shadow-1 fixed w-full z-2"
+      style="height: 60px"
+    >
+      <!-- Botón abrir menu -->
+      <div>
+        <a
+          *ngIf="!deployed_menu"
+          (click)="handleMenu()"
+          class="cursor-pointer"
+          pRipple
+        >
+          <p>despliegue</p>
+          <i
+            class="pi pi-bars text-2xl text-700 fadeinright animation-duration-400"
+          ></i>
+        </a>
+      </div>
+      <!-- Logotipo -->
+      <div class="w-full text-center" *ngIf="!deployed_menu">
+        <h2>Javier Barrera</h2>
+      </div>
+    </div>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>

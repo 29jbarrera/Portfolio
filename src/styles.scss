@@ -17,6 +17,44 @@ body {
   background: #fafafa;
 }
 
+// ----------------------------------------------
+
+@mixin item-menu-selected {
+  background-color: var(--surface-500);
+  color: var(--primary-700) !important;
+  span,
+  i {
+    font-weight: bold !important;
+  }
+}
+
+@mixin common-item-menu {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 14px !important;
+}
+
+@mixin item-menu {
+  @include common-item-menu();
+
+  &:hover {
+    @include item-menu-selected;
+    transition-duration: 150ms;
+    transition-property: background-color, color;
+  }
+
+  img {
+    width: 18px;
+    margin-right: 8px;
+  }
+}
+
 .container-router-outlet {
   max-width: 1800px;
   margin: 0 auto;
@@ -215,3 +253,55 @@ body {
   width: 40px;
   height: 40px;
 }
+
+// Style Menu lateral
+
+// Fondo Menu
+.bg-navigator {
+  background-color: var(--primary-600);
+}
+
+// Item seleccionado del menu
+.menu-item-selected {
+  @include item-menu-selected();
+}
+
+// Items del menu
+.item-menu {
+  @include item-menu();
+}
+
+// Separadores del logo y del menu
+.menu-separator {
+  width: 100%;
+  border: 1px solid var(--primary-700);
+}
+
+.menu-button-close {
+  position: absolute;
+  left: 285px;
+  top: 7px;
+  background: var(--primary-700);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  i {
+    font-size: 14px;
+  }
+
+  &:hover {
+    i {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+

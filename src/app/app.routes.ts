@@ -2,25 +2,27 @@ import { Routes } from '@angular/router';
 import { HomePage } from './pages/Home/home.page';
 import { ProjectsPage } from './pages/projects/projects.page';
 import { NotPageFoundPage } from './pages/NotPageFound/NotPageFound.page';
+import { NavigationMenuComponent } from './pages/navigation-menu/navigation-menu.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home',
+    path: 'portfolio',
+    component: NavigationMenuComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomePage,
+      },
+      {
+        path: 'projects',
+        component: ProjectsPage,
+      },
+    ],
   },
-  {
-    path: 'home',
-    component: HomePage,
-    pathMatch: 'full',
-  },
-  {
-    path: 'projects',
-    component: ProjectsPage,
-    pathMatch: 'full',
-  },
+
   {
     path: '**',
+    pathMatch: 'full',
     component: NotPageFoundPage,
   },
 ];

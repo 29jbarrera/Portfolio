@@ -1,1 +1,9 @@
-<p>menu works!</p>
+<a
+  (click)="go_to.emit(item.action)"
+  pRipple
+  [ngClass]="{ 'menu-item-selected ': checkRoute(item) }"
+  class="item-menu"
+>
+  <img [src]="item.icon" />
+  <span>{{ item.label }}</span>
+</a>
