@@ -11,16 +11,18 @@ import { ProgressBarModule } from 'primeng/progressbar';
 })
 export class SkillsComponent {
   skills = [
-    { value: 70, logo: '/assets/img/angular.svg' },
+    { value: 90, logo: '/assets/img/html5.svg' },
+    { value: 90, logo: '/assets/img/css.svg' },
+    { value: 80, logo: '/assets/img/javascript.svg' },
     { value: 80, logo: '/assets/img/typescript.svg' },
-    { value: 60, logo: '/assets/img/logo3.svg' },
-    { value: 90, logo: '/assets/img/logo4.svg' },
+    { value: 95, logo: '/assets/img/vscode.svg' },
   ];
 
   skills2 = [
-    { value: 75, logo: '/assets/img/logo5.svg' },
-    { value: 85, logo: '/assets/img/logo6.svg' },
-    { value: 65, logo: '/assets/img/logo7.svg' },
-    { value: 95, logo: '/assets/img/logo8.svg' },
+    { value: 80, logo: '/assets/img/angular.svg' },
+    { value: 60, logo: '/assets/img/react.svg' },
+    { value: 60, logo: '/assets/img/nodejs.svg' },
+    { value: 80, logo: '/assets/img/mongodb.svg' },
+    { value: 90, logo: '/assets/img/git.svg' },
   ];
 }

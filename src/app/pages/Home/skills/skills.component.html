@@ -1,12 +1,12 @@
-<section class="container-router-outlet">
+<section class="container-router-outlet pb-8">
   <div class="flex flex-column w-8 m-auto">
-    <div class="text-primary-700 font-bold text-5xl ml-3 mb-4">My Skills</div>
-    <div class="flex justify-content-center gap-6">
+    <div class="text-primary-700 font-bold text-5xl ml-3 mb-5">My Skills</div>
+    <div class="flex p-card p-4 justify-content-center gap-7">
       <!-- Primera columna -->
-      <div class="flex flex-column align-items-center gap-2 w-6">
-        <div class="card w-full" *ngFor="let skill of skills">
-          <div class="flex align-items-center gap-3 w-full">
-            <img [src]="skill.logo" alt="Skill Logo" class="logo-small" />
+      <div class="flex flex-column align-items-center gap-3 w-6">
+        <div class="w-full" *ngFor="let skill of skills">
+          <div class="flex align-items-center gap-4 w-full">
+            <img [src]="skill.logo" alt="Skill Logo" class="logo-small-skill" />
             <div class="w-full">
               <p-progressBar
                 [value]="skill.value"
@@ -18,10 +18,10 @@
       </div>
 
       <!-- Segunda columna -->
-      <div class="flex flex-column align-items-center gap-2 w-6">
+      <div class="flex flex-column align-items-center gap-3 w-6">
         <div class="card w-full" *ngFor="let skill of skills2">
-          <div class="flex align-items-center gap-3 w-full">
-            <img [src]="skill.logo" alt="Skill Logo" class="w-8 h-8" />
+          <div class="flex align-items-center gap-4 w-full">
+            <img [src]="skill.logo" alt="Skill Logo" class="logo-small-skill" />
             <div class="w-full">
               <p-progressBar
                 [value]="skill.value"
