@@ -6,6 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
-export class FooterComponent {}
+export class FooterComponent {
+  gitHubUrl = 'https://github.com/29jbarrera';
+  gitLabUrl = 'https://gitlab.com/29jbarrera';
+  linkedinUrl = 'https://www.linkedin.com/in/javier-barrera-lopez/';
+}

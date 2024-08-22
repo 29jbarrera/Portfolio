@@ -8,13 +8,20 @@
 
   <!-- Segunda fila: Logos centrados -->
   <div class="flex justify-content-center gap-5 mb-4">
-    <img
-      src="/assets/img/Github_light.svg"
-      alt="Github_light"
-      class="logo-small"
-    />
-    <img src="/assets/img/gitlab.svg" alt="gitlab" class="logo-small" />
-    <img src="/assets/img/linkedin.png" alt="linkedin" class="logo-small" />
+    <a [href]="gitHubUrl" target="_blank" rel="noopener noreferrer">
+      <img
+        src="/assets/img/Github_light.svg"
+        alt="Github_light"
+        class="logo-small"
+    /></a>
+
+    <a [href]="gitLabUrl" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/gitlab.svg" alt="gitlab" class="logo-small" />
+    </a>
+
+    <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/img/linkedin.png" alt="linkedin" class="logo-small" />
+    </a>
   </div>
 
   <!-- Tercera fila: Span centrado -->
