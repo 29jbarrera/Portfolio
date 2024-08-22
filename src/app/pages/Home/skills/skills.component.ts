@@ -10,6 +10,17 @@ import { ProgressBarModule } from 'primeng/progressbar';
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  skillsValues = [20, 40, 60, 80]; // Valores para la primera columna
-  skillsValues2 = [25, 50, 75, 100];
+  skills = [
+    { value: 70, logo: '/assets/img/angular.svg' },
+    { value: 80, logo: '/assets/img/typescript.svg' },
+    { value: 60, logo: '/assets/img/logo3.svg' },
+    { value: 90, logo: '/assets/img/logo4.svg' },
+  ];
+
+  skills2 = [
+    { value: 75, logo: '/assets/img/logo5.svg' },
+    { value: 85, logo: '/assets/img/logo6.svg' },
+    { value: 65, logo: '/assets/img/logo7.svg' },
+    { value: 95, logo: '/assets/img/logo8.svg' },
+  ];
 }

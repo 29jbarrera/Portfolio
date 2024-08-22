@@ -191,3 +191,17 @@ body {
   --gray-900: #212121;
   color-scheme: light;
 }
+
+/* Cambia el color de la barra de progreso */
+.p-progressbar {
+  background-color: #e0e0e0; /* Color de fondo de la barra */
+}
+
+.p-progressbar-value {
+  background-color: #002242 !important; /* Color de la barra de progreso */
+}
+
+.logo-small {
+  width: 45px;
+  height: 45px;
+}

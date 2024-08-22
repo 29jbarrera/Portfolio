@@ -4,11 +4,14 @@
     <div class="flex justify-content-center gap-6">
       <!-- Primera columna -->
       <div class="flex flex-column align-items-center gap-2 w-6">
-        <div class="card w-full" *ngFor="let value of skillsValues">
+        <div class="card w-full" *ngFor="let skill of skills">
           <div class="flex align-items-center gap-3 w-full">
-            <p>Logos</p>
+            <img [src]="skill.logo" alt="Skill Logo" class="logo-small" />
             <div class="w-full">
-              <p-progressBar [value]="value" class="w-full"></p-progressBar>
+              <p-progressBar
+                [value]="skill.value"
+                class="w-full"
+              ></p-progressBar>
             </div>
           </div>
         </div>
@@ -16,11 +19,14 @@
 
       <!-- Segunda columna -->
       <div class="flex flex-column align-items-center gap-2 w-6">
-        <div class="card w-full" *ngFor="let value of skillsValues2">
+        <div class="card w-full" *ngFor="let skill of skills2">
           <div class="flex align-items-center gap-3 w-full">
-            <p>Logos</p>
+            <img [src]="skill.logo" alt="Skill Logo" class="w-8 h-8" />
             <div class="w-full">
-              <p-progressBar [value]="value" class="w-full"></p-progressBar>
+              <p-progressBar
+                [value]="skill.value"
+                class="w-full"
+              ></p-progressBar>
             </div>
           </div>
         </div>
