@@ -1,12 +1,16 @@
-.custom-hover{
-    width: 82px;
-    height: 82px;
-    border-radius: 50%;
-    transition: width 0.3s, height 0.3s;
+.custom-hover {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s;
 }
 
-.custom-hover:hover{
-    width: 90px;
-    height: 90px;
+.custom-hover:hover {
+  width: 90px;
+  height: 90px;
+}
 
+.circular-image {
+  border-radius: 100%; /* Hace que la imagen sea circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
