@@ -34,13 +34,13 @@ export class NavigationMenuComponent {
     this.menu_items = [
       {
         label: 'Home',
-        icon: 'assets/icons/.png',
+        icon: 'assets/icons/download.png',
         routerLink: '/portfolio/home',
         action: 'home',
       },
       {
         label: 'Projects',
-        icon: 'assets/icons/.png',
+        icon: 'assets/icons/projects.png',
         routerLink: '/portfolio/projects',
         action: 'projects',
       },
