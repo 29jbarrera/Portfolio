@@ -34,7 +34,7 @@ export class NavigationMenuComponent {
     this.menu_items = [
       {
         label: 'Home',
-        icon: 'assets/icons/download.png',
+        icon: 'assets/icons/house.png',
         routerLink: '/portfolio/home',
         action: 'home',
       },
