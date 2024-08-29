@@ -1,0 +1,33 @@
+<section class="p-3">
+  <div class="p-card flex w-9 m-auto">
+    <div
+      [ngClass]="{
+        'flex-1': true,
+        'p-3': true,
+        'order-2': reverse,
+        'order-1': !reverse
+      }"
+    >
+      <h1 class="text-center" *ngIf="title">{{ title }}</h1>
+      <p class="px-3" *ngIf="description">{{ description }}</p>
+    </div>
+    <div
+      [ngClass]="{
+        'flex-1': true,
+        'p-3': true,
+        flex: true,
+        'align-items-center': true,
+        'justify-content-center': true,
+        'order-1': reverse,
+        'order-2': !reverse
+      }"
+      *ngIf="imageUrl"
+    >
+      <img
+        [src]="imageUrl"
+        alt="Project Image"
+        class="w-full h-auto border-round p-2"
+      />
+    </div>
+  </div>
+</section>

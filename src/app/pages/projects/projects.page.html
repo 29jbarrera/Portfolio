@@ -1,2 +1,26 @@
-<p>projects works!</p>
+<section class="container-router-outlet">
+  <h1 class="text-center">Proyects</h1>
+  <app-proyect
+    title="Mi Proyecto"
+    description="Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional.Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional."
+    imageUrl="/assets/img-proyects/km.png"
+  >
+  </app-proyect>
+
+  <app-proyect
+    title="Otro Proyecto"
+    description="Descripción de otro proyecto.Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional.Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional."
+    imageUrl="/assets/img-proyects/mirk-1.png"
+    [reverse]="true"
+  >
+  </app-proyect>
+
+  <app-proyect
+    title="Otro Proyecto"
+    description="Descripción de otro proyecto.Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional.Esta es una descripción detallada de mi proyecto. Aquí puedes poner información adicional."
+    imageUrl="/assets/img-proyects/mirk-1.png"
+  >
+  </app-proyect>
+</section>
+
 <app-footer></app-footer>

@@ -8,6 +8,6 @@ import { ButtonModule } from 'primeng/button';
   standalone: true,
   imports: [CommonModule, DividerModule, ButtonModule],
   templateUrl: './content.component.html',
-  styleUrl: './content.component.scss'
+  styleUrl: './content.component.scss',
 })
 export class ContentComponent {}
