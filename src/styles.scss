@@ -208,6 +208,17 @@ body {
   height: 40px;
 }
 
+.img-proyects {
+  width: 800px;
+  height: 800px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-proyects:hover {
+  transform: scale(1.04); /* Aumenta la escala al pasar el ratón */
+}
+
 // Style Menu lateral
 
 .icons-menu {

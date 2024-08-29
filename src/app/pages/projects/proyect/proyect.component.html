@@ -1,5 +1,5 @@
-<section class="p-3">
-  <div class="p-card flex w-9 m-auto">
+<section class="py-3">
+  <div class="p-card flex p-1 w-9 m-auto">
     <div
       [ngClass]="{
         'flex-1': true,
@@ -10,6 +10,7 @@
     >
       <h1 class="text-center" *ngIf="title">{{ title }}</h1>
       <p class="px-3" *ngIf="description">{{ description }}</p>
+      <a class="px-3" href="">{{ link }}</a>
     </div>
     <div
       [ngClass]="{
@@ -26,7 +27,7 @@
       <img
         [src]="imageUrl"
         alt="Project Image"
-        class="w-full h-auto border-round p-2"
+        class="w-full h-auto border-round img-proyects"
       />
     </div>
   </div>

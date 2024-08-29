@@ -12,5 +12,6 @@ export class ProyectComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() imageUrl: string = '';
+  @Input() link: string = '';
   @Input() reverse: boolean = false;
 }
