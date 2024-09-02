@@ -11,18 +11,23 @@ import { ProgressBarModule } from 'primeng/progressbar';
 })
 export class SkillsComponent {
   skills = [
-    { value: 90, logo: '/assets/img/html5.svg' },
-    { value: 90, logo: '/assets/img/css.svg' },
-    { value: 80, logo: '/assets/img/javascript.svg' },
-    { value: 80, logo: '/assets/img/typescript.svg' },
-    { value: 95, logo: '/assets/img/vscode.svg' },
+    { logo: '/assets/img/html5.svg' },
+    { logo: '/assets/img/css.svg' },
+    { logo: '/assets/img/javascript.svg' },
+    { logo: '/assets/img/typescript.svg' },
+    { logo: '/assets/img/vscode.svg' },
+    { logo: '/assets/img/angular.svg' },
+    { logo: '/assets/img/react.svg' },
+    { logo: '/assets/img/nodejs.svg' },
+    { logo: '/assets/img/mongodb.svg' },
+    { logo: '/assets/img/git.svg' },
   ];
 
   skills2 = [
-    { value: 80, logo: '/assets/img/angular.svg' },
-    { value: 60, logo: '/assets/img/react.svg' },
-    { value: 60, logo: '/assets/img/nodejs.svg' },
-    { value: 80, logo: '/assets/img/mongodb.svg' },
-    { value: 90, logo: '/assets/img/git.svg' },
+    { logo: '/assets/img/angular.svg' },
+    { logo: '/assets/img/react.svg' },
+    { logo: '/assets/img/nodejs.svg' },
+    { logo: '/assets/img/mongodb.svg' },
+    { logo: '/assets/img/git.svg' },
   ];
 }
