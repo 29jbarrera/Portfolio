@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
@@ -43,6 +43,12 @@ export class NavigationMenuComponent {
         icon: 'assets/icons/projects.png',
         routerLink: '/portfolio/projects',
         action: 'projects',
+      },
+      {
+        label: 'Contact',
+        icon: 'assets/icons/contacto.png',
+        routerLink: '/portfolio/home',
+        action: 'home',
       },
     ];
 
