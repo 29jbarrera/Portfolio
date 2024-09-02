@@ -23,30 +23,30 @@
 
 .logos {
   overflow: hidden;
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: var(--surface-border);
   white-space: nowrap;
-  position: relative; /* Para que los pseudo-elementos estén posicionados correctamente */
+  position: relative;
 }
 
 .logos:before,
 .logos:after {
   position: absolute;
   top: 0;
-  height: 100%; /* Asegura que cubran todo el alto del contenedor */
+  height: 100%;
   z-index: 2;
 }
 
 .logos:before {
-  left: 0; /* Ubicado al principio del contenedor */
-  width: 300px; /* Ajusta según necesites */
+  left: 0;
+  width: 300px;
   background: linear-gradient(to left, transparent, #eff3f8);
   content: "";
 }
 
 .logos:after {
-  right: 0; /* Ubicado al final del contenedor */
-  width: 300px; /* Ajusta según necesites */
+  right: 0;
+  width: 300px;
   background: linear-gradient(to right, transparent, #eff3f8);
   content: "";
 }
@@ -58,11 +58,19 @@
 
 .logos-slider2 {
   display: inline-block;
-  animation: 13s slide2 infinite linear;
+  animation: 14s slide2 infinite linear;
 }
 
 .logos-slider img,
 .logos-slider2 img {
   height: 80px;
   margin: 0 40px;
+}
+
+.logos:hover .logos-slider {
+  animation-play-state: paused;
+}
+
+.logos:hover .logos-slider2 {
+  animation-play-state: paused;
 }
