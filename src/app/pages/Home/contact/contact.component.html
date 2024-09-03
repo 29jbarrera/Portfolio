@@ -3,11 +3,11 @@
     <div class="text-primary-700 font-bold text-5xl">Contact</div>
   </div>
 
-  <div class="container-router-outlet flex">
+  <div class="container-router-outlet gap-3 flex">
     <div class="w-7">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="col-12">
         <div
-          class="p-2 grid mx-2 surface-ground border-round-xl surface-border border-2 border-dashed"
+          class="p-2 grid mx-2 border-round-xl surface-border border-2 border-dashed "
         >
           <div class="col-12 lg:col-6">
             <input
@@ -62,6 +62,15 @@
         </div>
       </form>
     </div>
-    <div class="w-5 surface-600">holi</div>
+
+    <div class="w-5 p-card flex-column">
+      <div class="mt-4">
+        <div class="px-6 py-3">Linkedin</div>
+        <div class="px-6 py-3">Infojobs</div>
+        <div class="px-6 py-3">GitHub</div>
+        <div class="px-6 py-3">GitLab</div>
+        <div class="px-6 py-3">Telegram</div>
+      </div>
+    </div>
   </div>
 </section>

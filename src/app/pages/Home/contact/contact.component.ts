@@ -36,6 +36,7 @@ export class ContactComponent {
     });
   }
 
+  // TODO añadirle mensajes de alertas de primeNG
   onSubmit() {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
