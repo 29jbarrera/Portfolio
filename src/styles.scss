@@ -276,3 +276,48 @@ body {
     }
   }
 }
+
+// Form Contact
+
+.input-text-form {
+  background-color: #f0f8ff; /* Un azul muy claro */
+  border: 2px solid #165dc7; /* Borde azul medio */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 12px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-text-form:focus {
+  border-color: #007bff; /* Azul más intenso al enfocar */
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3); /* Sombra azul sutil */
+  outline: none; /* Sin borde al enfocar */
+}
+
+textarea.input-text-form {
+  resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+}
+
+p-floatLabel input:focus ~ label,
+p-floatLabel textarea:focus ~ label {
+  color: #007bff; /* Color azul al enfocar */
+}
+
+p-floatLabel label {
+  color: #1e90ff; /* Color inicial del label */
+}
+
+button.p-button {
+  background-color: #007bff; /* Botón azul intenso */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.p-button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar sobre el botón */
+}
