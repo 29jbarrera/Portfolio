@@ -63,6 +63,7 @@ body {
 
 .container-contact {
   max-width: 1400px;
+  max-height: 1300px;
   margin: 0 auto;
   padding-top: 70px;
 }
@@ -296,7 +297,6 @@ body {
   border-radius: 14px; /* Bordes redondeados */
 }
 
-
 .input-text-form {
   background-color: #fff; /* Un azul muy claro */
   border: 1px solid var(--surface-600); /* Borde azul medio */
@@ -316,5 +316,5 @@ body {
 }
 
 textarea.input-text-form {
-  resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+  resize: none; /* Permitir cambiar el tamaño verticalmente */
 }
