@@ -289,6 +289,23 @@ body {
   }
 }
 
+// MENU HORIZONTAL
+
+.links-nav {
+  color: var(--primary-700); /* Text color */
+  font-weight: bold; /* Make text bold */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+
+  /* Additional styling (optional) */
+  padding: 0.5rem; /* Padding around the text */
+  margin: 0 0.5rem; /* Margin between links */
+}
+
+.links-nav:hover {
+  color: #90cdf4; /* Change color on hover (light blue) */
+}
+
 // Form Contact
 
 .form-contact {

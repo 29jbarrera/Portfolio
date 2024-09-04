@@ -1,57 +1,28 @@
-<div class="min-h-screen flex relative xl:static surface-ground">
-  <!-- Menú lateral -->
+<!-- Menu horizontal -->
+<div class="min-h-screen flex flex-col relative flex-auto">
   <div
-    id="app-sidebar"
-    class="h-full flex-shrink-0 fixed left-0 top-0 z-3 select-none fadeinleft animation-duration-150"
-    style="width: 300px"
+    class="flex justify-between items-center px-5 surface-0 shadow-1 fixed w-full z-3"
+    style="height: 60px"
   >
-    <div class="flex flex-column h-full bg-navigator">
-      <div
-        class="flex align-items-center justify-content-center px-5 flex-shrink-0"
-      >
-        <!-- Botón cerrar menú -->
-        <div class="menu-button-close" (click)="handleMenu()">
-          <!-- TODO : AÑADIR LOGO PARA CERRAR EL MENU -->
-          <img src="/assets/icons/flecha-izquierda.png" class="icons-menu" />
-        </div>
-        <!-- Logo APP -->
-        <h1 class="menu-logo">Javier Barrera</h1>
-      </div>
-      <!-- Separador Logo -->
-      <hr class="menu-separator" />
-      <!-- Componente Menú -->
-
-      <ul class="list-none p-2 m-0 overflow-y-auto">
-        <li *ngFor="let item of menu_items">
-          <app-menu [item]="item" (go_to)="go_to($event)"></app-menu>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Menu horizontal -->
-  <div class="min-h-screen flex flex-column relative flex-auto">
-    <div
-      class="flex justify-content-between align-items-center px-5 surface-0 shadow-1 fixed w-full z-2"
-      style="height: 60px"
+    <!-- Title -->
+    <h3
+      class="flex w-4 justify-content-center align-items-center text-2xl font-bold"
     >
-      <!-- Botón abrir menu -->
-      <div>
-        <a
-          *ngIf="!deployed_menu"
-          (click)="handleMenu()"
-          class="cursor-pointer"
-          pRipple
-        >
-          <img src="/assets/icons/lista.png" class="icons-menu" />
-        </a>
-      </div>
-      <!-- Logotipo -->
-      <div class="w-full text-center" *ngIf="!deployed_menu">
-        <h2>Javier Barrera</h2>
-      </div>
-    </div>
+      Javier Barrera
+    </h3>
 
-    <router-outlet></router-outlet>
+    <!-- Menu Items -->
+    <div class="flex w-8 justify-content-center align-items-center">
+      <nav class="flex gap-8">
+        <a href="/portfolio/home" class="links-nav">Home</a>
+        <a href="/portfolio/home#about-me" class="links-nav">About me</a>
+        <a href="/portfolio/projects" class="links-nav">Projects</a>
+        <a href="/portfolio/home#contact" class="links-nav">Contact</a>
+      </nav>
+    </div>
   </div>
+
+  <!-- Main content area -->
+
+  <router-outlet></router-outlet>
 </div>

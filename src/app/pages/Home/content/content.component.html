@@ -43,7 +43,7 @@
 </section>
 
 <!-- ABOUT ME -->
-<section class="container-router-outlet mb-6">
+<section class="container-router-outlet mb-6" id="about-me">
   <div class="flex-rows w-full">
     <div class="text-primary-700 font-bold text-5xl w-6 ml-auto py-2">
       About me
@@ -64,12 +64,11 @@
           perspiciatis quidem dignissimos odit assumenda placeat voluptatibus,
           pariatur numquam, saepe quaerat?
         </p>
-        <p-button
-          class="ml-2"
-          label="Contact me"
-          [rounded]="true"
-          [raised]="true"
-        />
+        <button pButton pRipple class="ml-2">
+          <a class="no-underline text-white" href="/portfolio/home#contact"
+            >Contact
+          </a>
+        </button>
       </div>
     </div>
   </div>

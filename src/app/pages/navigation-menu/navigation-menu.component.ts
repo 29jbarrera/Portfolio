@@ -31,46 +31,41 @@ export class NavigationMenuComponent {
   constructor(private _router: Router) {}
 
   ngOnInit() {
-    this.menu_items = [
-      {
-        label: 'Home',
-        icon: 'assets/icons/house.png',
-        routerLink: '/portfolio/home',
-        action: 'home',
-      },
-      {
-        label: 'Projects',
-        icon: 'assets/icons/projects.png',
-        routerLink: '/portfolio/projects',
-        action: 'projects',
-      },
-      {
-        label: 'Contact',
-        icon: 'assets/icons/contacto.png',
-        routerLink: '/portfolio/home',
-        action: 'home',
-      },
-    ];
-
-    const width: number = window.innerWidth;
-
-    if (width < 1129) {
-      this.handleMenu();
-    }
-  }
-
-  go_to(path: string) {
-    this._router.navigate(['portfolio', ...path.split('/')]);
-  }
-
-  handleMenu() {
-    const menu = document.getElementById('app-sidebar');
-
-    if (!menu) {
-      return;
-    }
-
-    this.deployed_menu = !this.deployed_menu;
-    menu.classList.toggle('hidden', !this.deployed_menu);
+    // this.menu_items = [
+    //   {
+    //     label: 'Home',
+    //     icon: 'assets/icons/house.png',
+    //     routerLink: '/portfolio/home',
+    //     action: 'home',
+    //   },
+    //   {
+    //     label: 'Projects',
+    //     icon: 'assets/icons/projects.png',
+    //     routerLink: '/portfolio/projects',
+    //     action: 'projects',
+    //   },
+    //   {
+    //     label: 'Contact',
+    //     icon: 'assets/icons/contacto.png',
+    //     routerLink: '/portfolio/home',
+    //     action: 'home',
+    //   },
+    // ];
+    //   const width: number = window.innerWidth;
+    //   if (width < 1129) {
+    //     this.handleMenu();
+    //   }
+    // }
+    // go_to(path: string) {
+    //   this._router.navigate(['portfolio', ...path.split('/')]);
+    // }
+    // handleMenu() {
+    //   const menu = document.getElementById('app-sidebar');
+    //   if (!menu) {
+    //     return;
+    //   }
+    //   this.deployed_menu = !this.deployed_menu;
+    //   menu.classList.toggle('hidden', !this.deployed_menu);
+    // }
   }
 }
