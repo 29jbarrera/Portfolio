@@ -61,6 +61,12 @@ body {
   padding-top: 70px;
 }
 
+.container-contact {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
 .p-button {
   background-color: #f3c068 !important;
   border: none;
@@ -203,6 +209,11 @@ body {
   height: 45px;
 }
 
+.logo-contact {
+  width: 50px;
+  height: 50px;
+}
+
 .logo-small-skill {
   width: 40px;
   height: 40px;
@@ -279,20 +290,29 @@ body {
 
 // Form Contact
 
+.form-contact {
+  background-color: var(--surface-border);
+  border: 2px solid var(--primary-700); /* Borde azul medio */
+  border-radius: 14px; /* Bordes redondeados */
+}
+
+
 .input-text-form {
-  background-color: #FFF; /* Un azul muy claro */
-  border: 1px solid var(--primary-700); /* Borde azul medio */
+  background-color: #fff; /* Un azul muy claro */
+  border: 1px solid var(--surface-600); /* Borde azul medio */
   border-radius: 6px; /* Bordes redondeados */
   padding: 14px; /* Espaciado interno */
   font-size: 16px; /* Tamaño del texto */
-  color: var(--primary-600); /* Color del texto */
+  color: var(--primary-700); /* Color del texto */
+  border-color: var(--surface-border); /* Azul más intenso al enfocar */
+  box-shadow: 0 0 5px rgba(23, 59, 95, 0.2); /* Sombra azul sutil */
+  outline: none; /* Sin borde al enfocar */
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .input-text-form:focus {
-  border-color: var(--surface-border); /* Azul más intenso al enfocar */
-  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3); /* Sombra azul sutil */
-  outline: none; /* Sin borde al enfocar */
+  border-color: var(--primary-700); /* Un color más vivo */
+  box-shadow: 0 0 10px rgba(23, 59, 95, 0.4); /* Sombra más intensa */
 }
 
 textarea.input-text-form {

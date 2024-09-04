@@ -1,14 +1,12 @@
-<section class="p-5">
-  <div class="container-router-outlet text-center p-6">
+<section class="container-contact p-5">
+  <div class="text-center p-6">
     <div class="text-primary-700 font-bold text-5xl">Contact</div>
   </div>
 
-  <div class="container-router-outlet gap-3 flex">
-    <div class="w-7">
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="col-12">
-        <div
-          class="p-2 grid mx-2 border-round-xl surface-border border-2 border-dashed "
-        >
+  <div class="gap-6 flex">
+    <div class="w-8">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="p-2 grid form-contact border-dashed">
           <div class="col-12 lg:col-6">
             <input
               id="name"
@@ -63,13 +61,64 @@
       </form>
     </div>
 
-    <div class="w-5 p-card flex-column">
-      <div class="mt-4">
-        <div class="px-6 py-3">Linkedin</div>
-        <div class="px-6 py-3">Infojobs</div>
-        <div class="px-6 py-3">GitHub</div>
-        <div class="px-6 py-3">GitLab</div>
-        <div class="px-6 py-3">Telegram</div>
+    <div class="p-2 grid form-contact border-dashed">
+      <div class="w-4 flex-column align-content-center">
+        <div class="px-6 py-3 flex align-items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/javier-barrera-l%C3%B3pez/"
+            class="flex align-items-center gap-4"
+            target="_blank"
+          >
+            <img
+              class="logo-contact"
+              src="/assets/icons/linkedin.png"
+              alt="Linkedin"
+            />
+            <span>linkedin.com/in/javier-barrera-lopez </span>
+          </a>
+        </div>
+        <div class="px-6 py-3 flex align-items-center gap-4">
+          <a
+            href="https://github.com/29jbarrera"
+            class="flex align-items-center gap-4"
+            target="_blank"
+          >
+            <img
+              class="logo-contact"
+              src="/assets/icons/github.png"
+              alt="GitHub"
+            />
+            <span>github.com/29jbarrera </span>
+          </a>
+        </div>
+        <div class="px-6 py-3 flex align-items-center gap-4">
+          <a
+            href="https://gitlab.com/29jbarrera"
+            class="flex align-items-center gap-4"
+            target="_blank"
+          >
+            <img
+              class="logo-contact"
+              src="/assets/icons/gitlab.png"
+              alt="GitLab"
+            />
+            <span>gitlab.com/29jbarrera </span>
+          </a>
+        </div>
+        <div class="px-6 py-3 flex align-items-center gap-4">
+          <a
+            href="https://t.me/JavierBL"
+            class="flex align-items-center gap-4"
+            target="_blank"
+          >
+            <img
+              class="logo-contact"
+              src="/assets/icons/telegrama.png"
+              alt="Telegram"
+            />
+            <span>Telegram</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
