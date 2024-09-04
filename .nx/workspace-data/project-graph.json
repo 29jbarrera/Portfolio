@@ -10339,6 +10339,21 @@
     "Portfolio": [
       {
         "source": "Portfolio",
+        "target": "npm:express",
+        "type": "static"
+      },
+      {
+        "source": "Portfolio",
+        "target": "npm:body-parser",
+        "type": "static"
+      },
+      {
+        "source": "Portfolio",
+        "target": "npm:cors",
+        "type": "static"
+      },
+      {
+        "source": "Portfolio",
         "target": "npm:@angular-devkit/build-angular",
         "type": "static"
       },

@@ -61,6 +61,19 @@
           "hash": "5336636969995539451"
         },
         {
+          "file": "Backend/package.json",
+          "hash": "404025154411807970"
+        },
+        {
+          "file": "Backend/server.js",
+          "hash": "4230514121146272938",
+          "deps": [
+            "npm:express",
+            "npm:body-parser",
+            "npm:cors"
+          ]
+        },
+        {
           "file": "README.md",
           "hash": "3724256147127126810"
         },
@@ -139,22 +152,40 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "11157212249124248751",
+          "hash": "10488736573638913221",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
+          "file": "src/app/pages/Home/contact/contact.component.html",
+          "hash": "4281528247240653701"
+        },
+        {
+          "file": "src/app/pages/Home/contact/contact.component.scss",
+          "hash": "13652707026173227513"
+        },
+        {
+          "file": "src/app/pages/Home/contact/contact.component.ts",
+          "hash": "12865153793009189175",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng",
+            "npm:@angular/forms"
+          ]
+        },
+        {
           "file": "src/app/pages/Home/content/content.component.html",
-          "hash": "7613098245510679029"
+          "hash": "17435544769962685369"
         },
         {
           "file": "src/app/pages/Home/content/content.component.scss",
-          "hash": "661945637188314254"
+          "hash": "17573483484091837427"
         },
         {
           "file": "src/app/pages/Home/content/content.component.ts",
-          "hash": "7153326402684161324",
+          "hash": "14795563287565200160",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -163,7 +194,7 @@
         },
         {
           "file": "src/app/pages/Home/home.page.html",
-          "hash": "16611900262280750614"
+          "hash": "951584222953026615"
         },
         {
           "file": "src/app/pages/Home/home.page.scss",
@@ -171,7 +202,7 @@
         },
         {
           "file": "src/app/pages/Home/home.page.ts",
-          "hash": "9901959892402388706",
+          "hash": "5140063553036881420",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -179,18 +210,19 @@
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.html",
-          "hash": "8295580610553341969"
+          "hash": "11675850219770386641"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.scss",
-          "hash": "4055606894390288348"
+          "hash": "5241029319242931613"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.ts",
-          "hash": "15516192318461174467",
+          "hash": "12895364485449450357",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:primeng"
           ]
         },
         {
@@ -211,23 +243,27 @@
         },
         {
           "file": "src/app/pages/components/footer/footer.component.html",
-          "hash": "4870840326542635113"
+          "hash": "1749669728627613307"
         },
         {
           "file": "src/app/pages/components/footer/footer.component.scss",
-          "hash": "4055606894390288348"
+          "hash": "17303878288690014183"
         },
         {
           "file": "src/app/pages/components/footer/footer.component.ts",
-          "hash": "6283335237404892245",
+          "hash": "1174681662150124274",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
           ]
         },
         {
+          "file": "src/app/pages/components/menu/menu-item.type.ts",
+          "hash": "15896793649210769059"
+        },
+        {
           "file": "src/app/pages/components/menu/menu.component.html",
-          "hash": "16950752715900324183"
+          "hash": "14692585034374508287"
         },
         {
           "file": "src/app/pages/components/menu/menu.component.scss",
@@ -235,15 +271,35 @@
         },
         {
           "file": "src/app/pages/components/menu/menu.component.ts",
-          "hash": "12963547665500720708",
+          "hash": "12790009985409369995",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/app/pages/navigation-menu/navigation-menu.component.html",
+          "hash": "17118738696760664588"
+        },
+        {
+          "file": "src/app/pages/navigation-menu/navigation-menu.component.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/pages/navigation-menu/navigation-menu.component.ts",
+          "hash": "2190865675102245662",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:primeng"
           ]
         },
         {
           "file": "src/app/pages/projects/projects.page.html",
-          "hash": "12960613306735420754"
+          "hash": "2308040689966817314"
         },
         {
           "file": "src/app/pages/projects/projects.page.scss",
@@ -251,15 +307,272 @@
         },
         {
           "file": "src/app/pages/projects/projects.page.ts",
-          "hash": "9260359006175483812",
+          "hash": "5966994368407720924",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
           ]
         },
         {
+          "file": "src/app/pages/projects/proyect/proyect.component.html",
+          "hash": "16698847233403430267"
+        },
+        {
+          "file": "src/app/pages/projects/proyect/proyect.component.scss",
+          "hash": "317057561676487914"
+        },
+        {
+          "file": "src/app/pages/projects/proyect/proyect.component.ts",
+          "hash": "11135109648330480729",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
           "file": "src/assets/.gitkeep",
           "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/icons-skills-2/Prisma_dark.svg",
+          "hash": "11986954430990017126"
+        },
+        {
+          "file": "src/assets/icons-skills-2/Prisma_light.svg",
+          "hash": "11589842317533240356"
+        },
+        {
+          "file": "src/assets/icons-skills-2/azure.svg",
+          "hash": "12842628035431957056"
+        },
+        {
+          "file": "src/assets/icons-skills-2/firebase.svg",
+          "hash": "7175833539717487356"
+        },
+        {
+          "file": "src/assets/icons-skills-2/git.svg",
+          "hash": "2681868690162982397"
+        },
+        {
+          "file": "src/assets/icons-skills-2/nodejs.svg",
+          "hash": "12039570256104637720"
+        },
+        {
+          "file": "src/assets/icons-skills-2/postman.svg",
+          "hash": "13450304594355469078"
+        },
+        {
+          "file": "src/assets/icons-skills-2/primeNG.png",
+          "hash": "9539068636994876113"
+        },
+        {
+          "file": "src/assets/icons-skills-2/react.svg",
+          "hash": "15716435981386244132"
+        },
+        {
+          "file": "src/assets/icons-skills-2/vscode.svg",
+          "hash": "10197119569592755041"
+        },
+        {
+          "file": "src/assets/icons-skills/Github_light.svg",
+          "hash": "16638751453946142782"
+        },
+        {
+          "file": "src/assets/icons-skills/PrimeFlexLogo.svg",
+          "hash": "6295152526618043543"
+        },
+        {
+          "file": "src/assets/icons-skills/angular.svg",
+          "hash": "4463652874575231410"
+        },
+        {
+          "file": "src/assets/icons-skills/css.svg",
+          "hash": "13222859933618462597"
+        },
+        {
+          "file": "src/assets/icons-skills/gitlab.svg",
+          "hash": "9281283287869321944"
+        },
+        {
+          "file": "src/assets/icons-skills/html5.svg",
+          "hash": "12657793700405901227"
+        },
+        {
+          "file": "src/assets/icons-skills/javascript.svg",
+          "hash": "17533521424743288831"
+        },
+        {
+          "file": "src/assets/icons-skills/mongodb.svg",
+          "hash": "9532184898063452368"
+        },
+        {
+          "file": "src/assets/icons-skills/mysql.svg",
+          "hash": "3027115378508844904"
+        },
+        {
+          "file": "src/assets/icons-skills/typescript.svg",
+          "hash": "6681815766518397714"
+        },
+        {
+          "file": "src/assets/icons/contacto.png",
+          "hash": "9460712975838324559"
+        },
+        {
+          "file": "src/assets/icons/download.png",
+          "hash": "17174984827171509145"
+        },
+        {
+          "file": "src/assets/icons/flecha-izquierda.png",
+          "hash": "3692356854226824148"
+        },
+        {
+          "file": "src/assets/icons/github.png",
+          "hash": "8039235152265236685"
+        },
+        {
+          "file": "src/assets/icons/gitlab.png",
+          "hash": "500238192489156051"
+        },
+        {
+          "file": "src/assets/icons/house.png",
+          "hash": "7616292952994618815"
+        },
+        {
+          "file": "src/assets/icons/linkedin.png",
+          "hash": "18327875697525468137"
+        },
+        {
+          "file": "src/assets/icons/lista.png",
+          "hash": "10836628035539621491"
+        },
+        {
+          "file": "src/assets/icons/projects.png",
+          "hash": "3129983928582935488"
+        },
+        {
+          "file": "src/assets/icons/telegrama.png",
+          "hash": "9989947163316163959"
+        },
+        {
+          "file": "src/assets/img-proyects/km.png",
+          "hash": "10768098992830832156"
+        },
+        {
+          "file": "src/assets/img-proyects/km1.png",
+          "hash": "18202942262654297967"
+        },
+        {
+          "file": "src/assets/img-proyects/km2.png",
+          "hash": "14251959473035680768"
+        },
+        {
+          "file": "src/assets/img-proyects/km3.png",
+          "hash": "3773723887468803781"
+        },
+        {
+          "file": "src/assets/img-proyects/km4.png",
+          "hash": "16556446688084114579"
+        },
+        {
+          "file": "src/assets/img-proyects/km5.png",
+          "hash": "16885315275427792919"
+        },
+        {
+          "file": "src/assets/img-proyects/mirk-1.png",
+          "hash": "16804776892694173849"
+        },
+        {
+          "file": "src/assets/img-proyects/mirk-2.png",
+          "hash": "823584114119246474"
+        },
+        {
+          "file": "src/assets/img-proyects/mirk-3.png",
+          "hash": "2139339467808795204"
+        },
+        {
+          "file": "src/assets/img-proyects/mirk.png",
+          "hash": "16436362220870459866"
+        },
+        {
+          "file": "src/assets/img-proyects/valoriza-1.png",
+          "hash": "7589192769823870886"
+        },
+        {
+          "file": "src/assets/img-proyects/valoriza.png",
+          "hash": "17272177545097562394"
+        },
+        {
+          "file": "src/assets/img/Github_light.svg",
+          "hash": "16638751453946142782"
+        },
+        {
+          "file": "src/assets/img/Udemy_dark.svg",
+          "hash": "17387068620222922269"
+        },
+        {
+          "file": "src/assets/img/Udemy_light.svg",
+          "hash": "5305575053386162947"
+        },
+        {
+          "file": "src/assets/img/angular.svg",
+          "hash": "4463652874575231410"
+        },
+        {
+          "file": "src/assets/img/code.jpg",
+          "hash": "8748888101495473111"
+        },
+        {
+          "file": "src/assets/img/css.svg",
+          "hash": "13222859933618462597"
+        },
+        {
+          "file": "src/assets/img/developer.png",
+          "hash": "13150686711791542031"
+        },
+        {
+          "file": "src/assets/img/git.svg",
+          "hash": "2681868690162982397"
+        },
+        {
+          "file": "src/assets/img/gitlab.svg",
+          "hash": "9281283287869321944"
+        },
+        {
+          "file": "src/assets/img/html5.svg",
+          "hash": "12657793700405901227"
+        },
+        {
+          "file": "src/assets/img/javascript.svg",
+          "hash": "17533521424743288831"
+        },
+        {
+          "file": "src/assets/img/linkedin.png",
+          "hash": "15652806890603687904"
+        },
+        {
+          "file": "src/assets/img/mongodb.svg",
+          "hash": "9532184898063452368"
+        },
+        {
+          "file": "src/assets/img/mysql.svg",
+          "hash": "3027115378508844904"
+        },
+        {
+          "file": "src/assets/img/nodejs.svg",
+          "hash": "12039570256104637720"
+        },
+        {
+          "file": "src/assets/img/react.svg",
+          "hash": "15716435981386244132"
+        },
+        {
+          "file": "src/assets/img/typescript.svg",
+          "hash": "6681815766518397714"
+        },
+        {
+          "file": "src/assets/img/vscode.svg",
+          "hash": "10197119569592755041"
         },
         {
           "file": "src/favicon.ico",
@@ -277,6 +590,10 @@
           ]
         },
         {
+          "file": "src/styles.scss",
+          "hash": "15135123824047760754"
+        },
+        {
           "file": "tsconfig.app.json",
           "hash": "17337579397915052279"
         },
@@ -287,14 +604,6 @@
         {
           "file": "tsconfig.spec.json",
           "hash": "15575553540147145788"
-        },
-        {
-          "file": "src/styles.scss",
-          "hash": "1533735369400170109"
-        },
-        {
-          "file": "src/assets/img/download.png",
-          "hash": "17174984827171509145"
         }
       ]
     }
