@@ -24,11 +24,15 @@
       }"
       *ngIf="imageUrl"
     >
-      <img
-        [src]="imageUrl"
-        alt="Project Image"
-        class="w-full h-auto border-round img-proyects"
-      />
+      <div class="image-container">
+        <img
+          [src]="getCurrentImageUrl()"
+          alt="Image"
+          class="w-full h-auto border-round img-proyects"
+        />
+        <button pButton pRipple (click)="showPrevious()"><-</button>
+        <button pButton pRipple (click)="showNext()">-></button>
+      </div>
     </div>
   </div>
 </section>
