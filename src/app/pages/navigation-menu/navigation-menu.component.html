@@ -3,13 +3,25 @@
   <div class="nav-container">
     <div class="nav-background"></div>
     <h3 class="title">Javier Barrera</h3>
-    <nav class="nav-links">
-      <div class="flex m-auto gap-7">
-        <a href="/portfolio/home" class="links-nav">Home</a>
+    <nav class="nav-links gap-3 md:gap-7">
+      <div class="flex m-auto gap-7 nav-row">
+        <a
+          href="/portfolio/home"
+          class="links-nav"
+          routerLink="/portfolio/home"
+          routerLinkActive="active"
+          >Home</a
+        >
         <a href="/portfolio/home#about-me" class="links-nav">About me</a>
       </div>
-      <div class="flex m-auto gap-7">
-        <a href="/portfolio/projects" class="links-nav">Projects</a>
+      <div class="flex m-auto gap-7 nav-row">
+        <a
+          href="/portfolio/projects"
+          class="links-nav"
+          routerLink="/portfolio/projects"
+          routerLinkActive="active"
+          >Projects</a
+        >
         <a href="/portfolio/home#contact" class="links-nav">Contact</a>
       </div>
     </nav>
