@@ -1,24 +1,18 @@
 <!-- Menu horizontal -->
 <div class="min-h-screen flex flex-col relative flex-auto">
-  <div
-    class="flex justify-between align-items-center items-center px-5 surface-0 shadow-1 fixed w-full z-3"
-    style="height: 60px"
-  >
-    <!-- Title -->
-    <h3 class="flex w-4 justify-content-center text-2xl font-bold">
-      Javier Barrera
-    </h3>
-
-    <!-- Menu Items -->
-    <div class="flex w-8 justify-content-center align-items-center">
-      <nav class="flex gap-8">
+  <div class="nav-container">
+    <div class="nav-background"></div>
+    <h3 class="title">Javier Barrera</h3>
+    <nav class="nav-links">
+      <div class="flex m-auto gap-7">
         <a href="/portfolio/home" class="links-nav">Home</a>
         <a href="/portfolio/home#about-me" class="links-nav">About me</a>
+      </div>
+      <div class="flex m-auto gap-7">
         <a href="/portfolio/projects" class="links-nav">Projects</a>
         <a href="/portfolio/home#contact" class="links-nav">Contact</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </div>
-
   <router-outlet></router-outlet>
 </div>

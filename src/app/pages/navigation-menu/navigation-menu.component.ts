@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
@@ -28,7 +28,24 @@ export class NavigationMenuComponent {
   public menu_items: MenuItem[] = [];
   public deployed_menu: boolean = true;
 
-  constructor(private _router: Router) {}
+  constructor(private _router: Router, private elRef: ElementRef) {}
+
+  ngAfterViewInit() {
+    this.addScrollListener();
+  }
+
+  private addScrollListener() {
+    window.addEventListener('scroll', () => {
+      const navBackground =
+        this.elRef.nativeElement.querySelector('.nav-background');
+      if (navBackground) {
+        // Puedes ajustar el valor máximo de scroll para controlar la opacidad
+        const scrollTop = window.scrollY;
+        const opacity = Math.max(0.7, 1 - scrollTop / 500); // Cambia el divisor para ajustar el efecto
+        navBackground.style.backgroundColor = `rgba(250, 250, 250, ${opacity})`;
+      }
+    });
+  }
 
   ngOnInit() {
     // this.menu_items = [
