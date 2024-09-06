@@ -1,5 +1,5 @@
 <section class="py-5">
-  <div class="p-card flex w-11 md:w-9 m-auto surface-200">
+  <div class="p-card flex-colum w-11 md:w-9 m-auto surface-200 lg:flex">
     <div
       [ngClass]="{
         'flex-1': true,
@@ -9,19 +9,22 @@
       }"
     >
       <h1 class="text-center" *ngIf="title">{{ title }}</h1>
-      <p class="px-4" *ngIf="description">{{ description }}</p>
-      <p class="px-4" *ngIf="role">
+      <p class="px-2" *ngIf="description">{{ description }}</p>
+      <p class="px-2" *ngIf="role">
         <span>My role in the project:</span>{{ role }}
       </p>
-      <p class="px-4" *ngIf="tecnologies">
+      <p class="px-2" *ngIf="tecnologies">
         <span>Technologies used: </span>{{ tecnologies }}
       </p>
-      <a class="mr-4" [href]="link" target="_blank">Go to project</a>
+      <div class="flex justify-content-end">
+        <a class="mr-4" [href]="link" target="_blank">Go to project</a>
+      </div>
     </div>
     <div
+      class="md:p-4 lg:pr-5"
       [ngClass]="{
         'flex-1': true,
-        'p-3': true,
+        'p-2': true,
         flex: true,
         'align-items-center': true,
         'justify-content-center': true,
@@ -31,11 +34,7 @@
       *ngIf="imageUrl"
     >
       <div class="image-container">
-        <img
-          [src]="getCurrentImageUrl()"
-          alt="Image"
-          class="w-full h-auto border-round img-proyects"
-        />
+        <img [src]="getCurrentImageUrl()" alt="Image" class="w-full" />
         <button pButton pRipple class="button-nav" (click)="showPrevious()">
           <img class="logo-nav-img" src="/assets/icons/arrow-izquierda.png" />
         </button>
