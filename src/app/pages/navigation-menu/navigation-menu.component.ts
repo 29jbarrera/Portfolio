@@ -38,12 +38,29 @@ export class NavigationMenuComponent {
     window.addEventListener('scroll', () => {
       const navBackground =
         this.elRef.nativeElement.querySelector('.nav-background');
+      const scrollToTopBtn = this.elRef.nativeElement.querySelector('.scroll-to-top');
+
       if (navBackground) {
-        // Puedes ajustar el valor máximo de scroll para controlar la opacidad
+        // Ajustar la opacidad del fondo
         const scrollTop = window.scrollY;
-        const opacity = Math.max(0.7, 1 - scrollTop / 500); // Cambia el divisor para ajustar el efecto
+        const opacity = Math.max(0.7, 1 - scrollTop / 500);
         navBackground.style.backgroundColor = `rgba(250, 250, 250, ${opacity})`;
       }
+
+      if (scrollToTopBtn) {
+        if (window.scrollY > 300) { // Ajusta el valor según cuándo quieras que aparezca el botón
+          scrollToTopBtn.classList.add('visible');
+        } else {
+          scrollToTopBtn.classList.remove('visible');
+        }
+      }
+    });
+  }
+
+  public scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   }
 
