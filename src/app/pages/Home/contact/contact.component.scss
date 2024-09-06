@@ -9,3 +9,6 @@ a:hover {
   color: var(--surface-500); /* Cambia el color al hacer hover */
 }
 
+img:hover {
+  filter: drop-shadow(0 0 10px var(--surface-500));
+}

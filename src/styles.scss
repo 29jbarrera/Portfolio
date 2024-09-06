@@ -17,7 +17,6 @@ body {
   background: #fafafa;
 }
 
-
 // ----------------------------------------------
 
 @mixin item-menu-selected {
@@ -328,4 +327,10 @@ body {
 
 textarea.input-text-form {
   resize: none; /* Permitir cambiar el tamaño verticalmente */
+}
+
+h1 {
+  color: var(--primary-700);
+  font-weight: bold;
+  font-size: 38px;
 }
