@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="flex w-full justify-content-center align-items-center">
-      <div class="w-2 flex">
+      <div class="lg:w-2 w-4 pl-3 flex">
         <div
           class="flex surface-400"
           style="width: 105px; height: 105px; border-radius: 50%"
@@ -38,7 +38,7 @@
       </div>
       <!-- TODO: AÑADIR IMAGEN PERSSONAL -->
       <div class="w-10">
-        <img src="/assets/img/developer.png" class="w-6" />
+        <img src="/assets/img/developer.png" class="lg:w-6 w-10" />
       </div>
     </div>
   </div>
@@ -46,18 +46,19 @@
 
 <!-- ABOUT ME -->
 <section class="container-router-outlet" id="about-me">
-  <div class="flex w-full">
-    <div class="flex w-6 py-2">
-      <!-- CAmbiar img por una ideal -->
+  <div class="flex-colum lg:flex pt-6 align-items-center">
+    <div class="hidden md:flex w-6 py-2">
+      <!-- Cambiar img por una ideal -->
       <div class="flex w-full justify-content-center align-items-center -mt-7">
         <img src="/assets/img/code.jpg" class="w-7 circular-image" />
       </div>
     </div>
-    <div class="w-6 flex-colum text-primary-700">
-      <!-- Añadir logo de sobre mi -->
-      <h1 class="font-bold text-5xl">About me</h1>
 
-      <p class="w-8 text-about-me">
+    <div class="lg:w-6 w-full flex-colum text-primary-700 md:-pt-8">
+      <!-- Añadir logo de sobre mi -->
+      <h1 class="font-bold text-5xl text-center lg:text-left">About me</h1>
+
+      <p class="lg:w-8 w-11 text-center lg:text-left text-about-me">
         Hi! I'm Javier, a passionate web developer specialized in frontend, with
         a particular focus on Angular. I have an advanced degree in Web
         Application Development and a year of professional experience in
@@ -68,7 +69,7 @@
         platforms like Udemy, complementing my education with an intensive
         bootcamp.
       </p>
-      <p class="w-8 text-about-me">
+      <p class="lg:w-8 w-11 text-center lg:text-left text-about-me">
         In total, I have spent more than four years learning and perfecting my
         skills, combining my academic studies with self-taught training. My
         specialty is frontend, where I master Angular and its ecosystem. I have
@@ -78,7 +79,7 @@
         databases such as MongoDB , MySQL or Prisma, which allows me to have a
         integral vision in application development
       </p>
-      <p class="w-8 text-about-me">
+      <p class="lg:w-8 w-11 text-center lg:text-left text-about-me">
         I am constantly looking for ways to improve my skills and keep myself
         updated with new trends in web development. I consider myself a
         self-taught, curious and detail-oriented person, with a great ability to
@@ -87,17 +88,19 @@
         that each project not only meets the technical requirements, but also
         provides the best user experience possible.
       </p>
-      <p class="w-8 text-about-me">
+      <p class="lg:w-8 w-11 text-center lg:text-left text-about-me">
         If you are interested in learning more about my work or how I can
         collaborate on your next project, don't hesitate to contact me. I'm sure
         that, working as a team, we can create something amazing.
       </p>
-      <button pButton pRipple class="ml-4">
-        <!-- Añadir logo de contacto -->
-        <a class="no-underline text-white" href="/portfolio/home#contact"
-          >Contact me
-        </a>
-      </button>
+      <div class="button-container">
+        <button pButton pRipple>
+          <!-- Añadir logo de contacto -->
+          <a class="no-underline text-white" href="/portfolio/home#contact"
+            >Contact me
+          </a>
+        </button>
+      </div>
     </div>
   </div>
 </section>

@@ -28,3 +28,23 @@ p-divider {
   color: var(--primary-600);
   line-height: 1.4; /* Espaciado entre líneas */
 }
+
+/* Estilo general para el contenedor del botón */
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea el botón a la izquierda por defecto */
+  margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para centrar el botón en pantallas pequeñas */
+@media (max-width: 768px) {
+  .button-container {
+    justify-content: center; /* Centra el botón horizontalmente */
+  }
+
+  /* Asegúrate de que el botón no tenga márgenes que lo desalineen */
+  button {
+    margin-left: 0; /* Elimina el margen izquierdo del botón */
+    margin-right: 0; /* Elimina el margen derecho del botón, si es necesario */
+  }
+}
