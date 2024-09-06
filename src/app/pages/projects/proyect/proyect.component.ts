@@ -13,13 +13,19 @@ import { ButtonModule } from 'primeng/button';
 export class ProyectComponent {
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() role: string = '';
+  @Input() tecnologies: string = '';
   @Input() imageUrl: string[] = [];
   @Input() link: string = '';
   @Input() reverse: boolean = false;
 
+  isLinkActive: boolean = true;
+
   currentIndex: number = 0;
 
   ngOnInit() {
+    this.isLinkActive = this.link ? true : false;
+
     if (this.imageUrl.length === 0) {
       console.warn('No images provided!');
     }

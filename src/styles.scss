@@ -243,7 +243,7 @@ body {
   text-align: center;
 }
 
-button {
+.button-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -251,11 +251,11 @@ button {
   cursor: pointer;
 }
 
-button:first-of-type {
+.button-nav:first-of-type {
   left: 5px;
 }
 
-button:last-of-type {
+.button-nav:last-of-type {
   right: 5px;
 }
 

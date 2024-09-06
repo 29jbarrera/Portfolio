@@ -5,3 +5,37 @@
 .order-2 {
   order: 2;
 }
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary-700);
+}
+
+p {
+  color: var(--primary-600);
+  text-align: justify;
+}
+
+span {
+  font-weight: 700;
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  color: var(--primary-600);
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--primary-100);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+a:hover {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+.p-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
+}

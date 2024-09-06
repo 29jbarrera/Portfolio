@@ -1,16 +1,22 @@
 <section class="py-5">
-  <div class="p-card flex p-1 w-9 m-auto">
+  <div class="p-card flex w-11 md:w-9 m-auto surface-200">
     <div
       [ngClass]="{
         'flex-1': true,
-        'p-3': true,
+        'p-4': true,
         'order-2': reverse,
         'order-1': !reverse
       }"
     >
       <h1 class="text-center" *ngIf="title">{{ title }}</h1>
-      <p class="px-3" *ngIf="description">{{ description }}</p>
-      <a class="px-3" href="">{{ link }}</a>
+      <p class="px-4" *ngIf="description">{{ description }}</p>
+      <p class="px-4" *ngIf="role">
+        <span>My role in the project:</span>{{ role }}
+      </p>
+      <p class="px-4" *ngIf="tecnologies">
+        <span>Technologies used: </span>{{ tecnologies }}
+      </p>
+      <a class="mr-4" [href]="link" target="_blank">Go to project</a>
     </div>
     <div
       [ngClass]="{
@@ -30,10 +36,10 @@
           alt="Image"
           class="w-full h-auto border-round img-proyects"
         />
-        <button pButton pRipple (click)="showPrevious()">
+        <button pButton pRipple class="button-nav" (click)="showPrevious()">
           <img class="logo-nav-img" src="/assets/icons/arrow-izquierda.png" />
         </button>
-        <button pButton pRipple (click)="showNext()">
+        <button pButton pRipple class="button-nav" (click)="showNext()">
           <img class="logo-nav-img" src="/assets/icons/flecha-derecha.png" />
         </button>
       </div>
