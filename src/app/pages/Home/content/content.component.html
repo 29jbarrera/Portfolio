@@ -1,22 +1,24 @@
 <section class="container-router-outlet mb-6">
-  <div class="flex w-full mt-4">
-    <div class="w-6 text-center">
+  <div class="flex-colum lg:flex pt-8">
+    <div class="w-full text-center">
       <div class="text-primary-600 text-xl py-2">FULL-STACK WEB DEVELOPER</div>
-      <div
-        class="text-primary-700 font-bold text-5xl text-left w-3 m-auto py-2"
-      >
-        JAVIER BARRERA
+      <div class="text-primary-700">
+        <h1 class="font-bold text-5xl">JAVIER BARRERA</h1>
       </div>
 
       <div
-        class="flex align-items-center text-primary-600 text-sm text-left w-4 m-auto py-2"
+        class="flex align-items-center w-full lg:w-4 m-auto text-left text-primary-600 text-base"
       >
-        <p-divider layout="vertical" />
-        <!-- TODO: AÑADIR DESCRIPCIÓN-->
-        <h3>I'm a full-stack web developer and I work</h3>
+        <p-divider class="p-divider-dotted" layout="vertical" />
+        <h3>
+          I am a web developer specialized in frontend with Angular. With a
+          solid academic background and professional experience, I have worked
+          on several projects that demonstrate my ability to create modern and
+          efficient web applications.
+        </h3>
       </div>
     </div>
-    <div class="flex w-6 justify-content-center align-items-center">
+    <div class="flex w-full justify-content-center align-items-center">
       <div class="w-2 flex">
         <div
           class="flex surface-400"
@@ -35,41 +37,67 @@
         </div>
       </div>
       <!-- TODO: AÑADIR IMAGEN PERSSONAL -->
-      <div class="w-9 border-radius mt-3">
-        <img src="/assets/img/developer.png" class="w-7" />
+      <div class="w-10">
+        <img src="/assets/img/developer.png" class="w-6" />
       </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT ME -->
-<section class="container-router-outlet mb-6" id="about-me">
-  <div class="flex-rows w-full">
-    <div class="text-primary-700 font-bold text-5xl w-6 ml-auto py-2">
-      About me
+<section class="container-router-outlet" id="about-me">
+  <div class="flex w-full">
+    <div class="flex w-6 py-2">
+      <!-- CAmbiar img por una ideal -->
+      <div class="flex w-full justify-content-center align-items-center -mt-7">
+        <img src="/assets/img/code.jpg" class="w-7 circular-image" />
+      </div>
     </div>
-    <div class="flex py-2 gap-6">
-      <!-- TODO: AÑADIR IMAGEN ORDENADOR CHULA -->
-      <div class="flex w-6 justify-content-center align-items-center -mt-7">
-        <img src="/assets/img/code.jpg" class="w-8 circular-image" />
-      </div>
-      <div class="flex-rows w-6 justify-content-center align-items-center">
-        <p class="text-primary-600 w-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-          beatae voluptatem aperiam veritatis debitis quia explicabo magni,
-          ducimus id perspiciatis quidem dignissimos odit assumenda placeat
-          voluptatibus, pariatur numquam, saepe quaerat? Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Praesentium beatae voluptatem
-          aperiam veritatis debitis quia explicabo magni, ducimus id
-          perspiciatis quidem dignissimos odit assumenda placeat voluptatibus,
-          pariatur numquam, saepe quaerat?
-        </p>
-        <button pButton pRipple class="ml-2">
-          <a class="no-underline text-white" href="/portfolio/home#contact"
-            >Contact
-          </a>
-        </button>
-      </div>
+    <div class="w-6 flex-colum text-primary-700">
+      <!-- Añadir logo de sobre mi -->
+      <h1 class="font-bold text-5xl">About me</h1>
+
+      <p class="w-8 text-about-me">
+        Hi! I'm Javier, a passionate web developer specialized in frontend, with
+        a particular focus on Angular. I have an advanced degree in Web
+        Application Development and a year of professional experience in
+        creating digital solutions, where I have had the opportunity to work on
+        several projects that you will see in my portfolio. My passion for web
+        development does not end there, since in addition to my formal training,
+        I have invested time in acquiring knowledge through different courses on
+        platforms like Udemy, complementing my education with an intensive
+        bootcamp.
+      </p>
+      <p class="w-8 text-about-me">
+        In total, I have spent more than four years learning and perfecting my
+        skills, combining my academic studies with self-taught training. My
+        specialty is frontend, where I master Angular and its ecosystem. I have
+        worked with libraries such as PrimeNG and PrimeFlex to optimize the
+        creation of attractive and functional user interfaces. In addition, I
+        have used Ionic in mobile projects and I have experience managing
+        databases such as MongoDB , MySQL or Prisma, which allows me to have a
+        integral vision in application development
+      </p>
+      <p class="w-8 text-about-me">
+        I am constantly looking for ways to improve my skills and keep myself
+        updated with new trends in web development. I consider myself a
+        self-taught, curious and detail-oriented person, with a great ability to
+        communicate effectively with the team. This allows me to collaborate
+        seamlessly with other developers, designers and stakeholders, ensuring
+        that each project not only meets the technical requirements, but also
+        provides the best user experience possible.
+      </p>
+      <p class="w-8 text-about-me">
+        If you are interested in learning more about my work or how I can
+        collaborate on your next project, don't hesitate to contact me. I'm sure
+        that, working as a team, we can create something amazing.
+      </p>
+      <button pButton pRipple class="ml-4">
+        <!-- Añadir logo de contacto -->
+        <a class="no-underline text-white" href="/portfolio/home#contact"
+          >Contact me
+        </a>
+      </button>
     </div>
   </div>
 </section>
