@@ -48,3 +48,7 @@ p-divider {
     margin-right: 0; /* Elimina el margen derecho del botón, si es necesario */
   }
 }
+
+.img-blur {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
