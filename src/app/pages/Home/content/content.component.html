@@ -1,4 +1,8 @@
 <section class="container-router-outlet mb-4">
+  <div class="card flex justify-content-center">
+    <app-location></app-location>
+    <p-toast position="top-left"></p-toast>
+  </div>
   <div class="flex-colum lg:flex pt-8">
     <div class="w-full text-center">
       <div class="text-primary-600 text-xl py-2">FULL-STACK WEB DEVELOPER</div>
@@ -32,6 +36,7 @@
               alt="download"
               src="/assets/icons/download.png"
               class="w-5 m-auto mt-4"
+              (click)="downloadPDF()"
             />
           </div>
         </div>

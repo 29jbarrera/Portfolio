@@ -1,0 +1,33 @@
+.location-info {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 34, 66, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 34, 66, 0.5);
+    padding: 10px;
+    transition: opacity 1s ease; /* Transición para suavizar el cambio */
+  }
+  
+  .previous-location {
+    opacity: 1; /* Asegúrate de que sea visible */
+    transition: opacity 1s ease; /* Transición para el cambio de visibilidad */
+  }
+  
+  .previous-location.ng-hide {
+    opacity: 0; /* Oculta la ubicación anterior después del retraso */
+  }
+  
+  .location-text {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .flag-icon {
+    height: 27px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+  }
+  

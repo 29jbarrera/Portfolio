@@ -1,0 +1,35 @@
+<!-- Ubicación anterior, se muestra temporalmente -->
+<div
+  *ngIf="previousLocation"
+  class="location-info gap-2 mt-7 lg:mt-3 -mb-3 previous-location"
+>
+  <p class="location-text">
+    Previous visit from: {{ previousLocation.city }},
+    {{ previousLocation.country }}
+  </p>
+  <span
+    class="flag-icon"
+    [ngStyle]="{
+      'background-image':
+        'url(https://flagcdn.com/w320/' +
+        previousLocation.countryCode.toLowerCase() +
+        '.png)'
+    }"
+  ></span>
+</div>
+
+<!-- Ubicación actual -->
+<div *ngIf="location" class="location-info gap-2 mt-7 lg:mt-3 -mb-3">
+  <p class="location-text">
+    Last visit from: {{ location.city }}, {{ location.country }}
+  </p>
+  <span
+    class="flag-icon"
+    [ngStyle]="{
+      'background-image':
+        'url(https://flagcdn.com/w320/' +
+        location.countryCode.toLowerCase() +
+        '.png)'
+    }"
+  ></span>
+</div>
