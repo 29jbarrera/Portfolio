@@ -10,6 +10,11 @@ export const routes: Routes = [
     component: NavigationMenuComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      {
         path: 'home',
         component: HomePage,
       },
