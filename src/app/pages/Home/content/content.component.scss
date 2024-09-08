@@ -11,8 +11,16 @@
 }
 
 .circular-image {
-  border-radius: 100%; /* Hace que la imagen sea circular */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 3%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  filter: brightness(1.1) contrast(1.1);
+  border: 2px solid #fff; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-image:hover {
+  transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
