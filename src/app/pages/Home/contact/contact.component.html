@@ -1,9 +1,17 @@
 <section class="container-contact p-5">
   <div class="text-center p-6">
-    <div class="text-primary-700 font-bold text-5xl" id="contact">Contact</div>
+    <div id="contact">
+      <h1>
+        Contact
+        <img
+          src="/assets/icons- sections/contacto.png"
+          class="icons-sections"
+        />
+      </h1>
+    </div>
   </div>
 
-  <div class="gap-6 md:flex flex-colum ">
+  <div class="gap-6 md:flex flex-colum">
     <div class="w-full md:w-8 md:mb-0 mb-6">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="p-2 grid form-contact border-dashed">
