@@ -21,6 +21,13 @@
   }
 }
 
+.logo-small-skill {
+  width: 80px;
+  height: 80px;
+}
+
+
+
 .logos {
   overflow: hidden;
   padding: 40px 0;
@@ -75,3 +82,47 @@
   animation-play-state: paused;
 }
 
+
+// ------------------------------------------
+
+
+
+/* Centrar todo el slider vertical y horizontalmente */
+
+
+
+
+.slider-track {
+  display: flex;
+  animation: slide-left 13s linear infinite;
+  flex-wrap: nowrap; 
+}
+
+.responsive-logo {
+  max-width: 100px; /* Controla el tamaño máximo de los logos */
+  height: auto;
+  flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+/* Ajuste del slider en pantallas grandes */
+@media screen and (min-width: 1024px) {
+  .lg:w-6 {
+    width: 50%; /* Ajustamos el slider para que ocupe el 50% en pantallas grandes */
+  }
+}
+
+/* Ajuste de los logos y el slider en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .responsive-logo {
+    max-width: 80px; /* Ajustamos el tamaño de los logos en pantallas pequeñas */
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
