@@ -4,6 +4,7 @@ import { ContentComponent } from './content/content.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { EducationComponent } from './education/education.component';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
     SkillsComponent,
     FooterComponent,
     ContactComponent,
+    EducationComponent,
   ],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss',

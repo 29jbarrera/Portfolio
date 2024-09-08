@@ -1,0 +1,55 @@
+/* Estilos para cada tarjeta */
+.card {
+  background-color: var(--primary-600);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--primary-700);
+}
+
+.card:hover {
+  transform: rotate(1deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de hover */
+}
+
+/* Estilo específico para cada tarjeta */
+.card-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/icons-education/cesur.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.card-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/icons-education/udemy.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.card-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/icons-education/udemy.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.card-4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/icons-education/.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.content-card {
+  color: aliceblue;
+  position: relative;
+}
