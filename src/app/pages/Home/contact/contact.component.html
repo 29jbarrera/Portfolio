@@ -3,13 +3,19 @@
     <div>
       <h1>
         Contact
-        <img
-          src="/assets/icons-sections/contacto.png"
-          class="icons-sections"
-        />
+        <img src="/assets/icons-sections/contacto.png" class="icons-sections" />
       </h1>
     </div>
   </div>
+
+  <p-progressSpinner
+    class="spinner custom-spinner"
+    styleClass="w-7rem h-7rem "
+    strokeWidth="4"
+    animationDuration=".8s"
+    *ngIf="loading"
+    ariaLabel="loading"
+  />
 
   <div class="gap-6 md:flex flex-colum">
     <div class="w-full md:w-8 md:mb-0 mb-6">
@@ -57,14 +63,32 @@
               maxlength="5000"
             ></textarea>
           </div>
-          <div class="col-12 flex justify-content-end px-5">
-            <button
-              pButton
-              pRipple
-              label="Submit"
-              class="p-button-success"
-              type="submit"
-            ></button>
+
+          <div class="col-12 px-2 -mt-4 -mb-4">
+            <p-messages
+              [(value)]="messages"
+              [enableService]="false"
+              [closable]="false"
+            />
+          </div>
+          <div class="col-12 md:flex flex-colum justify-content-between px-2">
+            <div>
+              <re-captcha
+                siteKey="6LffGzsqAAAAAIDQ0ngwVQ1ITtg_Gj2Jg6WATHJv"
+                (resolved)="handleSuccess($event)"
+                (error)="handleError()"
+              ></re-captcha>
+            </div>
+
+            <div class="mt-3 lg:mt-0 justify-content-end pr-2">
+              <button
+                pButton
+                pRipple
+                label="Submit"
+                class="p-button-success"
+                type="submit"
+              ></button>
+            </div>
           </div>
         </div>
       </form>
@@ -83,7 +107,9 @@
               src="/assets/icons/linkedin.png"
               alt="Linkedin"
             />
-            <span class="font-semibold">linkedin.com/in/javier-barrera-lopez </span>
+            <span class="font-semibold"
+              >linkedin.com/in/javier-barrera-lopez
+            </span>
           </a>
         </div>
         <div class="px-6 py-3 flex align-items-center gap-4">

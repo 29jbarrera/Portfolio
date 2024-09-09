@@ -39,10 +39,10 @@ app.post("/send-email", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error al enviar el correo:", error);
-      res.status(500).send("Error al enviar el correo");
+      res.status(500).json("Error al enviar el correo");
     } else {
       console.log("Correo enviado: " + info.response);
-      res.status(200).send("Correo enviado correctamente");
+      res.status(200).json("Correo enviado correctamente");
     }
   });
 });
