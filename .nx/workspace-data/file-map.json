@@ -7,9 +7,11 @@
     "@angular/compiler": "^17.3.0",
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
-    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser": "^17.3.12",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "flag-icons": "^7.2.3",
+    "ng-recaptcha": "^13.2.1",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.0",
@@ -66,7 +68,7 @@
         },
         {
           "file": "Backend/server.js",
-          "hash": "4230514121146272938",
+          "hash": "16499224943153365868",
           "deps": [
             "npm:express",
             "npm:body-parser",
@@ -87,39 +89,21 @@
         },
         {
           "file": "package.json",
-          "hash": "8920315053964198572",
+          "hash": "16109692606088991177",
           "deps": [
-            "npm:@angular-devkit/build-angular",
-            "npm:@angular-devkit/core",
-            "npm:@angular-devkit/schematics",
-            "npm:@angular/cli",
-            "npm:@angular/compiler-cli",
             "npm:@nx/angular",
             "npm:@nx/workspace",
-            "npm:@schematics/angular",
             "npm:@types/jasmine",
             "npm:jasmine-core",
-            "npm:karma",
             "npm:karma-chrome-launcher",
             "npm:karma-coverage",
             "npm:karma-jasmine",
             "npm:karma-jasmine-html-reporter",
             "npm:nx",
             "npm:typescript",
-            "npm:@angular/animations",
-            "npm:@angular/common",
-            "npm:@angular/compiler",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser",
-            "npm:@angular/platform-browser-dynamic",
-            "npm:@angular/router",
             "npm:primeflex",
             "npm:primeicons",
-            "npm:primeng",
-            "npm:rxjs",
-            "npm:tslib",
-            "npm:zone.js"
+            "npm:rxjs"
           ]
         },
         {
@@ -136,65 +120,55 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "4563944226015047516",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
+          "hash": "4563944226015047516"
         },
         {
           "file": "src/app/app.config.ts",
-          "hash": "5428614352870646528",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
+          "hash": "5428614352870646528"
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "10488736573638913221",
-          "deps": [
-            "npm:@angular/router"
-          ]
+          "hash": "1074398736677228843"
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.html",
-          "hash": "4281528247240653701"
+          "hash": "1778546271920054916"
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.scss",
-          "hash": "13652707026173227513"
+          "hash": "3599561751735154453"
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.ts",
-          "hash": "12865153793009189175",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:primeng",
-            "npm:@angular/forms"
-          ]
+          "hash": "14645676161863564718"
         },
         {
           "file": "src/app/pages/Home/content/content.component.html",
-          "hash": "17435544769962685369"
+          "hash": "7556905568975013224"
         },
         {
           "file": "src/app/pages/Home/content/content.component.scss",
-          "hash": "17573483484091837427"
+          "hash": "11709498789643276901"
         },
         {
           "file": "src/app/pages/Home/content/content.component.ts",
-          "hash": "14795563287565200160",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:primeng"
-          ]
+          "hash": "7492493835434004299"
+        },
+        {
+          "file": "src/app/pages/Home/education/education.component.html",
+          "hash": "3957912468899741271"
+        },
+        {
+          "file": "src/app/pages/Home/education/education.component.scss",
+          "hash": "5444939855971097952"
+        },
+        {
+          "file": "src/app/pages/Home/education/education.component.ts",
+          "hash": "5733791702603175644"
         },
         {
           "file": "src/app/pages/Home/home.page.html",
-          "hash": "951584222953026615"
+          "hash": "1684514952956328539"
         },
         {
           "file": "src/app/pages/Home/home.page.scss",
@@ -202,32 +176,23 @@
         },
         {
           "file": "src/app/pages/Home/home.page.ts",
-          "hash": "5140063553036881420",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
+          "hash": "1139798615404211670"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.html",
-          "hash": "11675850219770386641"
+          "hash": "12142168066702254505"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.scss",
-          "hash": "5241029319242931613"
+          "hash": "17824983315420218055"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.ts",
-          "hash": "12895364485449450357",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:primeng"
-          ]
+          "hash": "10959507825065655956"
         },
         {
           "file": "src/app/pages/NotPageFound/NotPageFound.page.html",
-          "hash": "10583919498137990584"
+          "hash": "12445789121199208266"
         },
         {
           "file": "src/app/pages/NotPageFound/NotPageFound.page.scss",
@@ -235,11 +200,7 @@
         },
         {
           "file": "src/app/pages/NotPageFound/NotPageFound.page.ts",
-          "hash": "2664777644121753235",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
+          "hash": "5922645545742128403"
         },
         {
           "file": "src/app/pages/components/footer/footer.component.html",
@@ -251,11 +212,19 @@
         },
         {
           "file": "src/app/pages/components/footer/footer.component.ts",
-          "hash": "1174681662150124274",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
+          "hash": "1174681662150124274"
+        },
+        {
+          "file": "src/app/pages/components/location/location.component.html",
+          "hash": "17743234733199939073"
+        },
+        {
+          "file": "src/app/pages/components/location/location.component.scss",
+          "hash": "14956325821836360789"
+        },
+        {
+          "file": "src/app/pages/components/location/location.component.ts",
+          "hash": "3919247863613297191"
         },
         {
           "file": "src/app/pages/components/menu/menu-item.type.ts",
@@ -271,68 +240,87 @@
         },
         {
           "file": "src/app/pages/components/menu/menu.component.ts",
-          "hash": "12790009985409369995",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/common",
-            "npm:primeng"
-          ]
+          "hash": "12790009985409369995"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.html",
-          "hash": "17118738696760664588"
+          "hash": "14813557331279698277"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.scss",
-          "hash": "4055606894390288348"
+          "hash": "8315290274295280801"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.ts",
-          "hash": "2190865675102245662",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:@angular/router",
-            "npm:primeng"
-          ]
+          "hash": "11442404720115872488"
         },
         {
           "file": "src/app/pages/projects/projects.page.html",
-          "hash": "2308040689966817314"
+          "hash": "3086796041178138548"
         },
         {
           "file": "src/app/pages/projects/projects.page.scss",
-          "hash": "4055606894390288348"
+          "hash": "2414679073178433466"
         },
         {
           "file": "src/app/pages/projects/projects.page.ts",
-          "hash": "5966994368407720924",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
+          "hash": "5966994368407720924"
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.html",
-          "hash": "16698847233403430267"
+          "hash": "9180536019296559586"
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.scss",
-          "hash": "317057561676487914"
+          "hash": "4299127178981453169"
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.ts",
-          "hash": "11135109648330480729",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:primeng"
-          ]
+          "hash": "13276379324865284610"
         },
         {
           "file": "src/assets/.gitkeep",
           "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/file/CV_Javier_Barrera_López.pdf",
+          "hash": "13578913063205610846"
+        },
+        {
+          "file": "src/assets/icons-education/cesur.png",
+          "hash": "3106172656558150175"
+        },
+        {
+          "file": "src/assets/icons-education/tendencia-ascendente.png",
+          "hash": "10749641988269127752"
+        },
+        {
+          "file": "src/assets/icons-education/udemy.png",
+          "hash": "12049685084814940822"
+        },
+        {
+          "file": "src/assets/icons-sections/bengala.png",
+          "hash": "10925304363702132169"
+        },
+        {
+          "file": "src/assets/icons-sections/contacto.png",
+          "hash": "14229211888636954668"
+        },
+        {
+          "file": "src/assets/icons-sections/contacto_white.png",
+          "hash": "15330783303769729725"
+        },
+        {
+          "file": "src/assets/icons-sections/espadas.png",
+          "hash": "2373745623965124786"
+        },
+        {
+          "file": "src/assets/icons-sections/lapiz.png",
+          "hash": "3823872302918268151"
+        },
+        {
+          "file": "src/assets/icons-sections/marca-de-verificacion.png",
+          "hash": "7615489858825236246"
         },
         {
           "file": "src/assets/icons-skills-2/Prisma_dark.svg",
@@ -415,12 +403,24 @@
           "hash": "6681815766518397714"
         },
         {
+          "file": "src/assets/icons/arrow-izquierda.png",
+          "hash": "12145119421728904130"
+        },
+        {
           "file": "src/assets/icons/contacto.png",
           "hash": "9460712975838324559"
         },
         {
           "file": "src/assets/icons/download.png",
           "hash": "17174984827171509145"
+        },
+        {
+          "file": "src/assets/icons/flecha-arriba.png",
+          "hash": "4977863206936553828"
+        },
+        {
+          "file": "src/assets/icons/flecha-derecha.png",
+          "hash": "12499282955142989459"
         },
         {
           "file": "src/assets/icons/flecha-izquierda.png",
@@ -453,6 +453,22 @@
         {
           "file": "src/assets/icons/telegrama.png",
           "hash": "9989947163316163959"
+        },
+        {
+          "file": "src/assets/img-proyects/Gestion-gastos-1.png",
+          "hash": "3953217592092483060"
+        },
+        {
+          "file": "src/assets/img-proyects/Gestion-gastos.png",
+          "hash": "15150542011672362274"
+        },
+        {
+          "file": "src/assets/img-proyects/Remate-1.png",
+          "hash": "12087357303234493803"
+        },
+        {
+          "file": "src/assets/img-proyects/Remate-2.png",
+          "hash": "12715821663142268942"
         },
         {
           "file": "src/assets/img-proyects/km.png",
@@ -495,6 +511,10 @@
           "hash": "16436362220870459866"
         },
         {
+          "file": "src/assets/img-proyects/remate.png",
+          "hash": "8941402779073539302"
+        },
+        {
           "file": "src/assets/img-proyects/valoriza-1.png",
           "hash": "7589192769823870886"
         },
@@ -527,8 +547,12 @@
           "hash": "13222859933618462597"
         },
         {
-          "file": "src/assets/img/developer.png",
-          "hash": "13150686711791542031"
+          "file": "src/assets/img/dev.png",
+          "hash": "18341776652389276722"
+        },
+        {
+          "file": "src/assets/img/fondoA.png",
+          "hash": "146867146345360409"
         },
         {
           "file": "src/assets/img/git.svg",
@@ -580,18 +604,15 @@
         },
         {
           "file": "src/index.html",
-          "hash": "7269947204059406559"
+          "hash": "10838643541238426954"
         },
         {
           "file": "src/main.ts",
-          "hash": "4927504514031276065",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
+          "hash": "4927504514031276065"
         },
         {
           "file": "src/styles.scss",
-          "hash": "16714061046768201410"
+          "hash": "468619060206226423"
         },
         {
           "file": "tsconfig.app.json",
