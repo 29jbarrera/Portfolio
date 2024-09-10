@@ -1,5 +1,5 @@
 <section class="py-5">
-  <div class="p-card flex-colum w-11 md:w-9 m-auto surface-100 lg:flex">
+  <div class="p-card flex-colum w-11 md:w-9 m-auto lg:flex card-proyect">
     <div
       [ngClass]="{
         'flex-1': true,
@@ -17,7 +17,9 @@
         <span>Technologies used: </span>{{ tecnologies }}
       </p>
       <div class="flex justify-content-end">
-        <a class="mr-4 font-bold" [href]="link" target="_blank">Go to project</a>
+        <a class="mr-4 font-bold" [href]="link" target="_blank"
+          >Go to project</a
+        >
       </div>
     </div>
     <div
@@ -35,10 +37,10 @@
     >
       <div class="image-container">
         <img [src]="getCurrentImageUrl()" alt="Image" class="w-full" />
-        <button pButton pRipple class="button-nav" (click)="showPrevious()">
+        <button class="button-nav" (click)="showPrevious()">
           <img class="logo-nav-img" src="/assets/icons/arrow-izquierda.png" />
         </button>
-        <button pButton pRipple class="button-nav" (click)="showNext()">
+        <button class="button-nav" (click)="showNext()">
           <img class="logo-nav-img" src="/assets/icons/flecha-derecha.png" />
         </button>
       </div>

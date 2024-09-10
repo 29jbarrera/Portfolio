@@ -13,7 +13,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100dvh;
-  background: #f2f2f2;
+  background: #f1f1f1;
   background-image: radial-gradient(
     circle,
     rgba(0, 34, 66, 0.1) 2px,
@@ -189,12 +189,14 @@ body {
 
   --primary-50: #f5f9ff;
   --primary-100: #d0e1fd;
+  --primary-150: #96b7d6;
   --primary-200: #abc9fb;
   --primary-300: #85b2f9;
   --primary-400: #609af8;
   --primary-500: #3b82f6;
   --primary-600: #325e84; //Color blue secondary
   --primary-650: #6c87a4;
+  --primary-620: #194063;
   --primary-700: #002242; //cOLOR BLUE PRIMARY
   --primary-800: #204887;
   --primary-900: #183462;

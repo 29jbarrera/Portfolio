@@ -7,9 +7,7 @@
 }
 
 h1 {
-  font-size: 26px;
-  font-weight: bold;
-  color: var(--primary-700);
+  font-size: 28px;
 }
 
 p {
@@ -19,17 +17,18 @@ p {
 }
 
 span {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 a {
   font-size: 1.1rem;
   text-decoration: none;
-  color: var(--primary-600);
+  color: white;
   padding: 8px;
   border-radius: 6px;
-  background-color: var(--primary-100);
+  background-color: var(--primary-650);
   transition: background-color 0.4s, color 0.4s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 a:hover {
@@ -37,18 +36,15 @@ a:hover {
   color: white;
 }
 
-.p-card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
+.card-proyect {
+  background: linear-gradient(135deg, rgb(238, 245, 252), rgb(170, 189, 209));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-nav-img {
   width: 17px;
   height: 17px;
 }
-
-// .img-proyects {
-
-// }
 
 .image-container {
   transition: transform 0.3s ease;
@@ -58,15 +54,22 @@ a:hover {
 }
 
 .image-container:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .button-nav {
+  background-color: rgba(243, 192, 104, 0.6);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 7px;
   cursor: pointer;
+  border: 2px solid #f3c068;
+  border-radius: 6px;
+}
+
+.button-nav:hover {
+  background-color: rgba(243, 192, 104, 0.8);
 }
 
 .button-nav:first-of-type {
