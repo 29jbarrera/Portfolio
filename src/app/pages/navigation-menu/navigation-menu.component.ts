@@ -23,6 +23,8 @@ import { MenuModule } from 'primeng/menu';
 export class NavigationMenuComponent {
   private originalBackgroundColor: string | undefined;
   private originalBorderColor: string | undefined;
+  private originalLinkColor: string = '';
+  private originalTitleColor: string = '';
 
   constructor(private elRef: ElementRef) {}
 
@@ -33,6 +35,8 @@ export class NavigationMenuComponent {
   private addScrollListener() {
     const navBackground =
       this.elRef.nativeElement.querySelector('.nav-background');
+    const linksNav = this.elRef.nativeElement.querySelectorAll('.links-nav');
+    const titleElement = this.elRef.nativeElement.querySelector('.title');
 
     if (navBackground) {
       this.originalBackgroundColor =
@@ -42,16 +46,40 @@ export class NavigationMenuComponent {
         window.getComputedStyle(navBackground).borderBottomColor;
     }
 
+    if (linksNav.length > 0) {
+      this.originalLinkColor = window.getComputedStyle(linksNav[0]).color;
+    }
+
+    if (titleElement) {
+      this.originalTitleColor = window.getComputedStyle(titleElement).color;
+    }
+
     window.addEventListener('scroll', () => {
       if (navBackground) {
         const scrollTop = window.scrollY;
 
         if (scrollTop > 0) {
-          navBackground.style.backgroundColor = `rgba(0, 34, 66, 0.55)`;
-          navBackground.style.borderBottomColor = `rgba(243, 192, 104, 0.7)`;
+          navBackground.style.backgroundColor = `rgba(255, 255, 255, 0.3)`;
+          navBackground.style.borderBottomColor = `rgba(243, 192, 104, 0.3)`;
+
+          linksNav.forEach((link: HTMLElement) => {
+            link.style.color = `rgba(0, 34, 66, 1)`;
+          });
+
+          if (titleElement) {
+            titleElement.style.color = `rgba(0, 34, 66, 1)`;
+          }
         } else {
           navBackground.style.backgroundColor = this.originalBackgroundColor;
           navBackground.style.borderBottomColor = this.originalBorderColor;
+
+          linksNav.forEach((link: HTMLElement) => {
+            link.style.color = this.originalLinkColor;
+          });
+
+          if (titleElement) {
+            titleElement.style.color = this.originalTitleColor;
+          }
         }
       }
 

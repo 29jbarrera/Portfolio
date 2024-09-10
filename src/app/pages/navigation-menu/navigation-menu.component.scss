@@ -26,7 +26,7 @@
   height: 100%;
   background-color: var(--primary-700);
   border-bottom: 3px solid #f3c068;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(11px);
   transition: background-color 0.7s ease;
   z-index: -1;
 }
@@ -59,7 +59,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: var(--surface-500);
   transform: translateX(-100%);
   transition: transform 0.4s ease;
 }
