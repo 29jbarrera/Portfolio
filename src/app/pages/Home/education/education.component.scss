@@ -1,10 +1,5 @@
-/* Estilos para cada tarjeta */
 .card {
-  background: linear-gradient(
-    135deg,
-    var(--primary-600),
-    var(--primary-700)
-  ); /* Degradado esquinado */
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
   height: 155px;
@@ -15,13 +10,11 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de hover */
 }
 
-/* Estilos para el contenido de la tarjeta */
 .content-card {
   color: #fff;
   position: relative;
 }
 
-/* Estilo específico para cada tarjeta */
 .card-1::before {
   content: "";
   position: absolute;
@@ -53,12 +46,18 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/assets/icons-education/tendencia-ascendente.png") no-repeat center;
+  background: url("/assets/icons-education/tendencia-ascendente.png") no-repeat
+    center;
   background-size: contain;
   opacity: 0.3;
 }
 
-.title-education{
-    color: var(--surface-500);
-    font-weight: bold;
+.title-education {
+  color: var(--surface-500);
+  font-weight: bold;
+}
+
+.center-education {
+  font-weight: bold;
+  font-size: 21px;
 }

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DividerModule } from 'primeng/divider';
 import { ButtonModule } from 'primeng/button';
-import { MessageService, Message } from 'primeng/api';
 import { LocationComponent } from '../../components/location/location.component';
 import { MessagesModule } from 'primeng/messages';
 
@@ -18,11 +17,9 @@ import { MessagesModule } from 'primeng/messages';
   ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss',
-  providers: [MessageService],
 })
 export class ContentComponent {
-  messages: Message[] = [];
-  constructor(private messageService: MessageService) {}
+  constructor() {}
 
   downloadPDF() {
     const confirmDownload = confirm('Are you sure you want to download my CV?');
@@ -31,7 +28,7 @@ export class ContentComponent {
       const pdfUrl = '/assets/file/CV_Javier_Barrera_López.pdf';
       const link = document.createElement('a');
       link.href = pdfUrl;
-      link.download = 'CV_JBL.pdf';
+      link.download = 'CV_JavierBL.pdf';
       link.click();
     } else {
       return;

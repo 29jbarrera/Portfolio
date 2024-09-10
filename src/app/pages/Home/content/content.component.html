@@ -2,13 +2,7 @@
   <div class="card flex justify-content-center">
     <app-location></app-location>
   </div>
-  <div class="w-6 pt-4 m-auto absolute">
-    <p-messages
-      [(value)]="messages"
-      [enableService]="false"
-      [closable]="false"
-    ></p-messages>
-  </div>
+  <div class="w-6 pt-4 m-auto absolute"></div>
   <div class="flex-colum lg:flex pt-8">
     <div class="w-full text-center">
       <div class="text-primary-600 text-xl py-2">FULL-STACK WEB DEVELOPER</div>
@@ -53,7 +47,6 @@
   </div>
 </section>
 
-<!-- ABOUT ME -->
 <section class="container-router-outlet" id="about-me">
   <div class="flex-colum lg:flex pt-6 align-items-center">
     <div class="hidden md:flex w-6 py-2">
@@ -109,7 +102,6 @@
       </p>
       <div class="button-container">
         <button pButton pRipple>
-          <!-- Añadir logo de contacto -->
           <a class="no-underline text-white" href="/portfolio/home#contact"
             >Contact me
             <img
