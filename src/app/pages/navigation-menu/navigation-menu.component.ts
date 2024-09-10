@@ -6,8 +6,6 @@ import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
 import { MenuModule } from 'primeng/menu';
-import { MenuItem } from '../components/menu/menu-item.type';
-import { MenuComponent } from '../components/menu/menu.component';
 
 @Component({
   selector: 'app-navigation-menu',
@@ -19,15 +17,11 @@ import { MenuComponent } from '../components/menu/menu.component';
     StyleClassModule,
     ButtonModule,
     MenuModule,
-    MenuComponent,
   ],
   templateUrl: './navigation-menu.component.html',
   styleUrl: './navigation-menu.component.scss',
 })
 export class NavigationMenuComponent {
-  public menu_items: MenuItem[] = [];
-  public deployed_menu: boolean = true;
-
   constructor(private _router: Router, private elRef: ElementRef) {}
 
   ngAfterViewInit() {
@@ -38,7 +32,8 @@ export class NavigationMenuComponent {
     window.addEventListener('scroll', () => {
       const navBackground =
         this.elRef.nativeElement.querySelector('.nav-background');
-      const scrollToTopBtn = this.elRef.nativeElement.querySelector('.scroll-to-top');
+      const scrollToTopBtn =
+        this.elRef.nativeElement.querySelector('.scroll-to-top');
 
       if (navBackground) {
         // Ajustar la opacidad del fondo
@@ -48,7 +43,8 @@ export class NavigationMenuComponent {
       }
 
       if (scrollToTopBtn) {
-        if (window.scrollY > 300) { // Ajusta el valor según cuándo quieras que aparezca el botón
+        if (window.scrollY > 300) {
+          // Ajusta el valor según cuándo quieras que aparezca el botón
           scrollToTopBtn.classList.add('visible');
         } else {
           scrollToTopBtn.classList.remove('visible');
@@ -60,7 +56,7 @@ export class NavigationMenuComponent {
   public scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   }
 
