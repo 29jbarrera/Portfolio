@@ -35,7 +35,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 export class ContactComponent {
   contactForm: FormGroup;
   captchaVerified: boolean = false;
-  messages: Message[] = []; // Inicializa como un array vacío
+  messages: Message[] = [];
   loading: boolean = false;
 
   constructor(
@@ -55,80 +55,8 @@ export class ContactComponent {
   onSubmit() {
     this.messages = [];
 
-    // Verifica si el formulario es inválido
-    if (this.contactForm.invalid) {
-      // Verifica si el campo de correo electrónico es inválido
-      const emailControl = this.contactForm.get('email');
-      if (
-        emailControl &&
-        emailControl.invalid &&
-        (emailControl.dirty || emailControl.touched)
-      ) {
-        if (emailControl.errors?.['email']) {
-          this.messages.push({
-            severity: 'error',
-            summary: 'Error',
-            detail:
-              'The email address is invalid. Please enter a valid email address.',
-          });
-        } else if (emailControl.errors?.['required']) {
-          this.messages.push({
-            severity: 'error',
-            summary: 'Error',
-            detail: 'Email field is required. Please provide an email address.',
-          });
-        }
-      }
+    this.error_control_form();
 
-      // Verifica si el campo del nombre es inválido
-      const nameControl = this.contactForm.get('name');
-      if (
-        nameControl &&
-        nameControl.invalid &&
-        (nameControl.dirty || nameControl.touched)
-      ) {
-        if (nameControl.errors?.['minlength']) {
-          this.messages.push({
-            severity: 'error',
-            summary: 'Error',
-            detail:
-              'Name must be at least 3 characters long. Please provide a valid name.',
-          });
-        } else if (nameControl.errors?.['required']) {
-          this.messages.push({
-            severity: 'error',
-            summary: 'Error',
-            detail: 'Name field is required. Please provide your name.',
-          });
-        }
-      }
-
-      // Muestra un mensaje genérico si el formulario tiene otros errores
-      if (this.messages.length === 0) {
-        this.messages.push({
-          severity: 'error',
-          summary: 'Error',
-          detail: 'All form fields are required. Please complete all fields.',
-        });
-      }
-
-      this.cd.detectChanges();
-      this.loading = false;
-      return;
-    }
-
-    // Verifica si el CAPTCHA está verificado
-    if (!this.captchaVerified) {
-      this.messages.push({
-        severity: 'error',
-        summary: 'Error',
-        detail:
-          'CAPTCHA verification is missing. Please complete the verification.',
-      });
-      this.cd.detectChanges();
-      this.loading = false;
-      return;
-    }
     this.loading = true;
 
     const formData = this.contactForm.value;
@@ -145,19 +73,115 @@ export class ContactComponent {
       })
       .subscribe(
         (response) => {
+          this.messages = [];
+          this.messages.push({
+            severity: 'success',
+            summary: 'Success',
+            detail: 'Message sent successfully.',
+          });
           this.captchaVerified = false;
           this.contactForm.reset();
           this.loading = false;
         },
         (error) => {
-          this.messageService.add({
+          this.loading = true;
+          this.messages = [];
+          this.messages.push({
             severity: 'error',
             summary: 'Error',
-            detail: 'Error sending the message.',
+            detail: 'Something unexpected happened.',
           });
-          console.error('Error sending message:', error);
+
+          this.loading = false;
+          this.cd.detectChanges();
         }
       );
+  }
+
+  error_control_form() {
+    if (this.contactForm.invalid) {
+      this.showErrorMessages();
+      return;
+    }
+
+    if (!this.captchaVerified) {
+      this.showErrorCaptchaMessage();
+      return;
+    }
+  }
+
+  private showErrorMessages() {
+    const emailErrorMessage =
+      'The email address is invalid. Please enter a valid email address.';
+    const nameErrorMessage =
+      'Name must be at least 3 characters long. Please provide a valid name.';
+    const requiredErrorMessage =
+      'All form fields are required. Please complete all fields.';
+
+    const emailControl = this.contactForm.get('email');
+    if (
+      emailControl &&
+      emailControl.invalid &&
+      (emailControl.dirty || emailControl.touched)
+    ) {
+      if (emailControl.errors?.['email']) {
+        this.messages.push({
+          severity: 'error',
+          summary: 'Error',
+          detail: emailErrorMessage,
+        });
+      } else if (emailControl.errors?.['required']) {
+        this.messages.push({
+          severity: 'error',
+          summary: 'Error',
+          detail: requiredErrorMessage,
+        });
+      }
+    }
+
+    const nameControl = this.contactForm.get('name');
+    if (
+      nameControl &&
+      nameControl.invalid &&
+      (nameControl.dirty || nameControl.touched)
+    ) {
+      if (nameControl.errors?.['minlength']) {
+        this.messages.push({
+          severity: 'error',
+          summary: 'Error',
+          detail: nameErrorMessage,
+        });
+      } else if (nameControl.errors?.['required']) {
+        this.messages.push({
+          severity: 'error',
+          summary: 'Error',
+          detail: requiredErrorMessage,
+        });
+      }
+    }
+
+    if (this.messages.length === 0) {
+      this.messages.push({
+        severity: 'error',
+        summary: 'Error',
+        detail: requiredErrorMessage,
+      });
+    }
+
+    this.cd.detectChanges();
+    this.loading = false;
+  }
+
+  private showErrorCaptchaMessage() {
+    const captchaErrorMessage =
+      'CAPTCHA verification is missing. Please complete the verification.';
+    this.messages.push({
+      severity: 'error',
+      summary: 'Error',
+      detail: captchaErrorMessage,
+    });
+    this.cd.detectChanges();
+    this.loading = false;
   }
 
   handleSuccess(token: string | null): void {
