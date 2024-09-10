@@ -9,29 +9,6 @@
   }
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slide2 {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.logo-small-skill {
-  width: 80px;
-  height: 80px;
-}
-
 .logos {
   overflow: hidden;
   padding: 40px 0;
@@ -51,15 +28,33 @@
 .logos:before {
   left: 0;
   width: 300px;
-  background: linear-gradient(to left, transparent, #eff3f8);
+  background: linear-gradient(to left, transparent, #f1f1f1);
   content: "";
 }
 
 .logos:after {
   right: 0;
   width: 300px;
-  background: linear-gradient(to right, transparent, #eff3f8);
+  background: linear-gradient(to right, transparent, #f1f1f1);
   content: "";
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .logos-slider {
@@ -84,29 +79,4 @@
 
 .logos:hover .logos-slider2 {
   animation-play-state: paused;
-}
-
-// ------------------------------------------
-
-/* Centrar todo el slider vertical y horizontalmente */
-
-.slider-track {
-  display: flex;
-  animation: slide-left 13s linear infinite;
-  flex-wrap: nowrap;
-}
-
-.responsive-logo {
-  max-width: 100px; /* Controla el tamaño máximo de los logos */
-  height: auto;
-  flex-shrink: 0; /* Evita que las imágenes se encojan */
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }

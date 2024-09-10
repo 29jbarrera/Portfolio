@@ -1,68 +1,55 @@
-/* Estilos generales */
 .min-h-screen {
   min-height: 100vh;
 }
 
 .nav-container {
-  position: fixed; /* Fijo en la parte superior */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupa el 100% del ancho */
-  height: 60px; /* Altura por defecto */
+  width: 100%;
+  height: 68px;
   display: flex;
-  flex-direction: row; /* Por defecto, mostrar todo en una fila */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 0 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Asegura que esté por encima de otros contenidos */
-  overflow: hidden; /* Asegura que el fondo no se desborde */
+  z-index: 3;
+  overflow: hidden;
 }
 
 .nav-background {
-  position: absolute; /* Posiciona el fondo detrás del contenido */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(250, 250, 250, 0.1); /* Fondo blanco semi-transparente */
-  backdrop-filter: blur(10px); /* Aplica un desenfoque al fondo */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
-  z-index: -1; /* Asegura que esté detrás del contenido */
+  background-color: var(--primary-700);
+  border-bottom: 3px solid #f3c068;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.7s ease;
+  z-index: -1;
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin-right: 15rem; /* Espacio entre el título y los enlaces */
-  color: var(--primary-700);
+  margin-right: 15rem;
+  color: white;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: row; /* Por defecto, en una fila */
+  flex-direction: row;
   gap: 1rem;
 }
 
-.nav-row {
-  display: flex;
-  gap: 1rem; /* Espacio entre los enlaces en la fila */
-}
-
-/* Estilo para los enlaces activos */
-.links-nav.active::before {
-  transform: translateX(
-    0
-  ); /* Muestra el subrayado cuando el enlace está activo */
-}
-
-/* Estilo para el subrayado en general */
 .links-nav {
   text-decoration: none;
-  color: var(--primary-700);
+  color: white;
   font-weight: bold;
-  position: relative; /* Necesario para el subrayado animado */
-  overflow: hidden; /* Asegura que el subrayado no se desborde */
+  position: relative;
+  overflow: hidden;
 }
 
 .links-nav::before {
@@ -72,31 +59,34 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--primary-700); /* Color del subrayado */
+  background: white;
   transform: translateX(-100%);
-  transition: transform 0.3s ease; /* Transición suave para el efecto */
+  transition: transform 0.4s ease;
+}
+
+.links-nav.active::before {
+  transform: translateX(0);
 }
 
 .links-nav:hover::before {
   transform: translateX(0);
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
   .title {
-    display: none; /* Oculta el título en pantallas pequeñas */
+    display: none;
   }
 
   .nav-container {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    height: 110px; /* Ajusta la altura según el contenido */
-    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
-    text-align: center; /* Centra el texto en el contenedor */
+    flex-direction: column;
+    height: 110px;
+    justify-content: flex-start;
+    text-align: center;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: column; /* Muestra los enlaces en una columna */
+    flex-direction: column;
     gap: 0.5rem;
     width: 100%;
     padding: 15px;
@@ -104,18 +94,16 @@
 
   .nav-row {
     display: flex;
-    justify-content: center; /* Centra los enlaces en cada fila */
+    justify-content: center;
     gap: 0.5rem;
     width: 100%;
   }
 
   .links-nav {
-    display: block; /* Asegura que los enlaces ocupan todo el ancho disponible */
-    padding: 0.5rem 0; /* Espacio dentro de cada enlace */
+    display: block;
+    padding: 0.5rem 0;
   }
 }
-
-/* navigation-menu.component.scss */
 
 .logo-scroll {
   width: 30px;
@@ -124,9 +112,9 @@
 
 .scroll-to-top {
   position: fixed;
-  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-  right: 20px; /* Ajusta la distancia desde la parte derecha */
-  background-color: rgba(243, 192, 104, 0.6); /* 10% opacidad */
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(243, 192, 104, 0.6);
   border: 2px solid #f3c068;
   border-radius: 10%;
   height: 50px;
@@ -135,14 +123,13 @@
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
-  z-index: 5; /* Asegura que el botón esté por encima de otros elementos */
-  opacity: 0; /* Inicialmente oculto */
-  visibility: hidden; /* Inicialmente oculto */
+  z-index: 3;
+  visibility: hidden;
 }
 
 .scroll-to-top.visible {
-  opacity: 1; /* Muestra el botón cuando la clase .visible está activa */
-  visibility: visible; /* Asegura que el botón sea visible */
+  opacity: 1;
+  visibility: visible;
 }
 
 .scroll-to-top:hover {
@@ -151,5 +138,5 @@
 }
 
 .scroll-to-top:focus {
-  outline: none; /* Elimina el contorno de enfoque predeterminado */
+  outline: none;
 }
