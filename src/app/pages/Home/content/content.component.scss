@@ -12,9 +12,9 @@
 
 .circular-image {
   border-radius: 3%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   filter: brightness(1.1) contrast(1.1);
-  border: 2px solid #fff; 
+  border: 2px solid #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

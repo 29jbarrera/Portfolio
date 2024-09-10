@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DividerModule } from 'primeng/divider';
 import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
+import { MessageService, Message } from 'primeng/api';
 import { LocationComponent } from '../../components/location/location.component';
+import { MessagesModule } from 'primeng/messages';
 
 @Component({
   selector: 'app-content',
@@ -13,7 +13,7 @@ import { LocationComponent } from '../../components/location/location.component'
     CommonModule,
     DividerModule,
     ButtonModule,
-    ToastModule,
+    MessagesModule,
     LocationComponent,
   ],
   templateUrl: './content.component.html',
@@ -21,19 +21,20 @@ import { LocationComponent } from '../../components/location/location.component'
   providers: [MessageService],
 })
 export class ContentComponent {
+  messages: Message[] = [];
   constructor(private messageService: MessageService) {}
 
   downloadPDF() {
-    const pdfUrl = '/assets/file/CV_Javier_Barrera_López.pdf';
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'CV_JBL.pdf';
-    link.click();
+    const confirmDownload = confirm('Are you sure you want to download my CV?');
 
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Descarga exitosa',
-      detail: 'CV descargado exitosamente',
-    });
+    if (confirmDownload) {
+      const pdfUrl = '/assets/file/CV_Javier_Barrera_López.pdf';
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = 'CV_JBL.pdf';
+      link.click();
+    } else {
+      return;
+    }
   }
 }

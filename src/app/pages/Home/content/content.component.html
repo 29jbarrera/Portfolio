@@ -1,7 +1,13 @@
 <section class="container-router-outlet mb-4">
   <div class="card flex justify-content-center">
     <app-location></app-location>
-    <p-toast position="top-left"></p-toast>
+  </div>
+  <div class="w-6 pt-4 m-auto absolute">
+    <p-messages
+      [(value)]="messages"
+      [enableService]="false"
+      [closable]="false"
+    ></p-messages>
   </div>
   <div class="flex-colum lg:flex pt-8">
     <div class="w-full text-center">
@@ -31,7 +37,6 @@
           <div
             class="m-auto text-center surface-500 cursor-pointer custom-hover"
           >
-            <!-- TODO: AL HACER CLICK DESCARGAR CV EN PDF -->
             <img
               alt="download"
               src="/assets/icons/download.png"
