@@ -26,13 +26,13 @@ a {
   color: white;
   padding: 8px;
   border-radius: 6px;
-  background-color: var(--primary-650);
+  background-color: var(--primary-700);
   transition: background-color 0.4s, color 0.4s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 a:hover {
-  background-color: var(--primary-700);
+  background-color: var(--primary-650);
   color: white;
 }
 
