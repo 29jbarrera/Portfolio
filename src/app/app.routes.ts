@@ -6,6 +6,11 @@ import { NavigationMenuComponent } from './pages/navigation-menu/navigation-menu
 
 export const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'portfolio/home',
+    pathMatch: 'full',
+  },
+  {
     path: 'portfolio',
     component: NavigationMenuComponent,
     children: [
