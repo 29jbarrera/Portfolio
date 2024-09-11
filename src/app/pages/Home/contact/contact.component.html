@@ -74,7 +74,7 @@
           <div class="col-12 md:flex flex-colum justify-content-between px-2">
             <div>
               <re-captcha
-                siteKey="6LdOMz4qAAAAALFlz_LJBarJRt2zMz2c96ggcZ2n"
+                siteKey="{{ reCaptchaSiteKey }}"
                 (resolved)="handleSuccess($event)"
                 (error)="handleError()"
               ></re-captcha>

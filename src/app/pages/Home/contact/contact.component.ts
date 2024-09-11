@@ -14,6 +14,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
 import { Message, MessageService } from 'primeng/api';
 import { MessagesModule } from 'primeng/messages';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { environment } from '../../../../environments/enviroments';
 
 @Component({
   selector: 'app-contact',
@@ -38,10 +39,11 @@ export class ContactComponent {
   messages: Message[] = [];
   loading: boolean = false;
 
+  reCaptchaSiteKey = environment.RECAPTCHA_SITE_KEY;
+
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,
-    private messageService: MessageService,
     private cd: ChangeDetectorRef
   ) {
     this.contactForm = this.fb.group({
