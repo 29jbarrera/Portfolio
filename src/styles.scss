@@ -102,7 +102,12 @@ h1 {
 }
 
 .form-contact {
-  background-color: var(--surface-border);
+  background: linear-gradient(
+    135deg,
+    rgb(238, 245, 252) 0%,
+    rgb(191, 206, 223, 0.6) 50%,
+    rgb(238, 245, 252) 100%
+  );
   border: 2px solid var(--primary-700);
   border-radius: 14px;
 }
