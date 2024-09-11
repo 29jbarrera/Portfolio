@@ -63,19 +63,6 @@
           "hash": "5336636969995539451"
         },
         {
-          "file": "Backend/package.json",
-          "hash": "404025154411807970"
-        },
-        {
-          "file": "Backend/server.js",
-          "hash": "16499224943153365868",
-          "deps": [
-            "npm:express",
-            "npm:body-parser",
-            "npm:cors"
-          ]
-        },
-        {
           "file": "README.md",
           "hash": "3724256147127126810"
         },
@@ -120,7 +107,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "4563944226015047516"
+          "hash": "2434366372722184440"
         },
         {
           "file": "src/app/app.config.ts",
@@ -132,43 +119,43 @@
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.html",
-          "hash": "1778546271920054916"
+          "hash": "3108264796904330429"
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.scss",
-          "hash": "3599561751735154453"
+          "hash": "5511835266573918512"
         },
         {
           "file": "src/app/pages/Home/contact/contact.component.ts",
-          "hash": "14645676161863564718"
+          "hash": "16489178100277873744"
         },
         {
           "file": "src/app/pages/Home/content/content.component.html",
-          "hash": "7556905568975013224"
+          "hash": "4335638589531789234"
         },
         {
           "file": "src/app/pages/Home/content/content.component.scss",
-          "hash": "11709498789643276901"
+          "hash": "5868866133827874679"
         },
         {
           "file": "src/app/pages/Home/content/content.component.ts",
-          "hash": "7492493835434004299"
+          "hash": "10037106840646102348"
         },
         {
           "file": "src/app/pages/Home/education/education.component.html",
-          "hash": "3957912468899741271"
+          "hash": "4565553381451937336"
         },
         {
           "file": "src/app/pages/Home/education/education.component.scss",
-          "hash": "5444939855971097952"
+          "hash": "17244478270484328570"
         },
         {
           "file": "src/app/pages/Home/education/education.component.ts",
-          "hash": "5733791702603175644"
+          "hash": "16943600925985348103"
         },
         {
           "file": "src/app/pages/Home/home.page.html",
-          "hash": "1684514952956328539"
+          "hash": "12218113098412392584"
         },
         {
           "file": "src/app/pages/Home/home.page.scss",
@@ -180,15 +167,15 @@
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.html",
-          "hash": "12142168066702254505"
+          "hash": "1634253516396856369"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.scss",
-          "hash": "17824983315420218055"
+          "hash": "14019075426556023398"
         },
         {
           "file": "src/app/pages/Home/skills/skills.component.ts",
-          "hash": "10959507825065655956"
+          "hash": "14131154301004003260"
         },
         {
           "file": "src/app/pages/NotPageFound/NotPageFound.page.html",
@@ -204,7 +191,7 @@
         },
         {
           "file": "src/app/pages/components/footer/footer.component.html",
-          "hash": "1749669728627613307"
+          "hash": "12753153495949695237"
         },
         {
           "file": "src/app/pages/components/footer/footer.component.scss",
@@ -216,51 +203,35 @@
         },
         {
           "file": "src/app/pages/components/location/location.component.html",
-          "hash": "17743234733199939073"
+          "hash": "13814731102816015920"
         },
         {
           "file": "src/app/pages/components/location/location.component.scss",
-          "hash": "14956325821836360789"
+          "hash": "17890856151044903427"
         },
         {
           "file": "src/app/pages/components/location/location.component.ts",
-          "hash": "3919247863613297191"
-        },
-        {
-          "file": "src/app/pages/components/menu/menu-item.type.ts",
-          "hash": "15896793649210769059"
-        },
-        {
-          "file": "src/app/pages/components/menu/menu.component.html",
-          "hash": "14692585034374508287"
-        },
-        {
-          "file": "src/app/pages/components/menu/menu.component.scss",
-          "hash": "4055606894390288348"
-        },
-        {
-          "file": "src/app/pages/components/menu/menu.component.ts",
-          "hash": "12790009985409369995"
+          "hash": "13347729356242794035"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.html",
-          "hash": "14813557331279698277"
+          "hash": "6702923150650393406"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.scss",
-          "hash": "8315290274295280801"
+          "hash": "8904414835736828650"
         },
         {
           "file": "src/app/pages/navigation-menu/navigation-menu.component.ts",
-          "hash": "11442404720115872488"
+          "hash": "55109785176410468"
         },
         {
           "file": "src/app/pages/projects/projects.page.html",
-          "hash": "3086796041178138548"
+          "hash": "3744717347212496228"
         },
         {
           "file": "src/app/pages/projects/projects.page.scss",
-          "hash": "2414679073178433466"
+          "hash": "8501999292812581395"
         },
         {
           "file": "src/app/pages/projects/projects.page.ts",
@@ -268,11 +239,11 @@
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.html",
-          "hash": "9180536019296559586"
+          "hash": "8126489680040706653"
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.scss",
-          "hash": "4299127178981453169"
+          "hash": "13767738101273883677"
         },
         {
           "file": "src/app/pages/projects/proyect/proyect.component.ts",
@@ -321,6 +292,10 @@
         {
           "file": "src/assets/icons-sections/marca-de-verificacion.png",
           "hash": "7615489858825236246"
+        },
+        {
+          "file": "src/assets/icons-skills-2/Express.js.svg",
+          "hash": "1813289024239639577"
         },
         {
           "file": "src/assets/icons-skills-2/Prisma_dark.svg",
@@ -391,6 +366,10 @@
           "hash": "17533521424743288831"
         },
         {
+          "file": "src/assets/icons-skills/linux.svg",
+          "hash": "2938751521330916439"
+        },
+        {
           "file": "src/assets/icons-skills/mongodb.svg",
           "hash": "9532184898063452368"
         },
@@ -407,10 +386,6 @@
           "hash": "12145119421728904130"
         },
         {
-          "file": "src/assets/icons/contacto.png",
-          "hash": "9460712975838324559"
-        },
-        {
           "file": "src/assets/icons/download.png",
           "hash": "17174984827171509145"
         },
@@ -423,10 +398,6 @@
           "hash": "12499282955142989459"
         },
         {
-          "file": "src/assets/icons/flecha-izquierda.png",
-          "hash": "3692356854226824148"
-        },
-        {
           "file": "src/assets/icons/github.png",
           "hash": "8039235152265236685"
         },
@@ -435,20 +406,8 @@
           "hash": "500238192489156051"
         },
         {
-          "file": "src/assets/icons/house.png",
-          "hash": "7616292952994618815"
-        },
-        {
           "file": "src/assets/icons/linkedin.png",
           "hash": "18327875697525468137"
-        },
-        {
-          "file": "src/assets/icons/lista.png",
-          "hash": "10836628035539621491"
-        },
-        {
-          "file": "src/assets/icons/projects.png",
-          "hash": "3129983928582935488"
         },
         {
           "file": "src/assets/icons/telegrama.png",
@@ -456,7 +415,7 @@
         },
         {
           "file": "src/assets/img-proyects/Gestion-gastos-1.png",
-          "hash": "3953217592092483060"
+          "hash": "1788426430565123955"
         },
         {
           "file": "src/assets/img-proyects/Gestion-gastos.png",
@@ -464,31 +423,27 @@
         },
         {
           "file": "src/assets/img-proyects/Remate-1.png",
-          "hash": "12087357303234493803"
+          "hash": "2356538510379685698"
         },
         {
           "file": "src/assets/img-proyects/Remate-2.png",
-          "hash": "12715821663142268942"
+          "hash": "7199621334869564567"
         },
         {
           "file": "src/assets/img-proyects/km.png",
-          "hash": "10768098992830832156"
+          "hash": "6374453522185078733"
         },
         {
           "file": "src/assets/img-proyects/km1.png",
-          "hash": "18202942262654297967"
+          "hash": "15213574265460244297"
         },
         {
           "file": "src/assets/img-proyects/km2.png",
-          "hash": "14251959473035680768"
-        },
-        {
-          "file": "src/assets/img-proyects/km3.png",
-          "hash": "3773723887468803781"
+          "hash": "14899568654535660522"
         },
         {
           "file": "src/assets/img-proyects/km4.png",
-          "hash": "16556446688084114579"
+          "hash": "15531290300904629001"
         },
         {
           "file": "src/assets/img-proyects/km5.png",
@@ -496,19 +451,19 @@
         },
         {
           "file": "src/assets/img-proyects/mirk-1.png",
-          "hash": "16804776892694173849"
+          "hash": "15832386793580055300"
         },
         {
           "file": "src/assets/img-proyects/mirk-2.png",
-          "hash": "823584114119246474"
+          "hash": "9946065513321311411"
         },
         {
           "file": "src/assets/img-proyects/mirk-3.png",
-          "hash": "2139339467808795204"
+          "hash": "12418573192017109888"
         },
         {
           "file": "src/assets/img-proyects/mirk.png",
-          "hash": "16436362220870459866"
+          "hash": "8663381199361876254"
         },
         {
           "file": "src/assets/img-proyects/remate.png",
@@ -527,26 +482,6 @@
           "hash": "16638751453946142782"
         },
         {
-          "file": "src/assets/img/Udemy_dark.svg",
-          "hash": "17387068620222922269"
-        },
-        {
-          "file": "src/assets/img/Udemy_light.svg",
-          "hash": "5305575053386162947"
-        },
-        {
-          "file": "src/assets/img/angular.svg",
-          "hash": "4463652874575231410"
-        },
-        {
-          "file": "src/assets/img/code.jpg",
-          "hash": "8748888101495473111"
-        },
-        {
-          "file": "src/assets/img/css.svg",
-          "hash": "13222859933618462597"
-        },
-        {
           "file": "src/assets/img/dev.png",
           "hash": "18341776652389276722"
         },
@@ -555,56 +490,16 @@
           "hash": "146867146345360409"
         },
         {
-          "file": "src/assets/img/git.svg",
-          "hash": "2681868690162982397"
-        },
-        {
           "file": "src/assets/img/gitlab.svg",
           "hash": "9281283287869321944"
-        },
-        {
-          "file": "src/assets/img/html5.svg",
-          "hash": "12657793700405901227"
-        },
-        {
-          "file": "src/assets/img/javascript.svg",
-          "hash": "17533521424743288831"
         },
         {
           "file": "src/assets/img/linkedin.png",
           "hash": "15652806890603687904"
         },
         {
-          "file": "src/assets/img/mongodb.svg",
-          "hash": "9532184898063452368"
-        },
-        {
-          "file": "src/assets/img/mysql.svg",
-          "hash": "3027115378508844904"
-        },
-        {
-          "file": "src/assets/img/nodejs.svg",
-          "hash": "12039570256104637720"
-        },
-        {
-          "file": "src/assets/img/react.svg",
-          "hash": "15716435981386244132"
-        },
-        {
-          "file": "src/assets/img/typescript.svg",
-          "hash": "6681815766518397714"
-        },
-        {
-          "file": "src/assets/img/vscode.svg",
-          "hash": "10197119569592755041"
-        },
-        {
-          "file": "src/favicon.ico",
-          "hash": "3988961587069885523"
-        },
-        {
           "file": "src/index.html",
-          "hash": "10838643541238426954"
+          "hash": "17655878279025837576"
         },
         {
           "file": "src/main.ts",
@@ -612,7 +507,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "468619060206226423"
+          "hash": "5984346085444062777"
         },
         {
           "file": "tsconfig.app.json",

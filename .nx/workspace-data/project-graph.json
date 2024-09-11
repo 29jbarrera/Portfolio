@@ -10339,46 +10339,6 @@
     "Portfolio": [
       {
         "source": "Portfolio",
-        "target": "npm:express",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:body-parser",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:cors",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular-devkit/build-angular",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular-devkit/core",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular-devkit/schematics",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/cli",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/compiler-cli",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
         "target": "npm:@nx/angular",
         "type": "static"
       },
@@ -10389,22 +10349,12 @@
       },
       {
         "source": "Portfolio",
-        "target": "npm:@schematics/angular",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
         "target": "npm:@types/jasmine",
         "type": "static"
       },
       {
         "source": "Portfolio",
         "target": "npm:jasmine-core",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:karma",
         "type": "static"
       },
       {
@@ -10439,46 +10389,6 @@
       },
       {
         "source": "Portfolio",
-        "target": "npm:@angular/animations",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/compiler",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
         "target": "npm:primeflex",
         "type": "static"
       },
@@ -10489,22 +10399,7 @@
       },
       {
         "source": "Portfolio",
-        "target": "npm:primeng",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
         "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:tslib",
-        "type": "static"
-      },
-      {
-        "source": "Portfolio",
-        "target": "npm:zone.js",
         "type": "static"
       }
     ],
