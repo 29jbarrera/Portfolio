@@ -59,6 +59,10 @@ export class ContactComponent {
 
     this.error_control_form();
 
+    if (this.contactForm.invalid || !this.captchaVerified) {
+      return;
+    }
+
     this.loading = true;
 
     const formData = this.contactForm.value;

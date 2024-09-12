@@ -19,7 +19,7 @@
 
   <div class="gap-6 md:flex flex-colum">
     <div class="w-full md:w-8 md:mb-0 mb-6">
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="contactForm">
         <div class="p-2 grid form-contact border-dashed">
           <div class="col-12 lg:col-6">
             <input
@@ -87,6 +87,7 @@
                 label="Submit"
                 class="p-button-success font-bold"
                 type="submit"
+                (click)="onSubmit()"
               ></button>
             </div>
           </div>
