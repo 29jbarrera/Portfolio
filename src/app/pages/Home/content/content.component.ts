@@ -25,7 +25,7 @@ export class ContentComponent {
     const confirmDownload = confirm('Are you sure you want to download my CV?');
 
     if (confirmDownload) {
-      const pdfUrl = '/assets/file/CV_Javier_Barrera_López.pdf';
+      const pdfUrl = '/assets/file/CV_JavierBL.pdf';
       const link = document.createElement('a');
       link.href = pdfUrl;
       link.download = 'CV_JavierBL.pdf';
