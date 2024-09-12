@@ -70,7 +70,7 @@ export class ContactComponent {
     });
 
     this.http
-      .post('http://localhost:3000/send-email', formData, {
+      .post(`${environment.apiUrl}/send-email`, formData, {
         responseType: 'text',
       })
       .subscribe(
